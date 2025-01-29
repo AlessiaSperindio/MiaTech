@@ -1,2 +1,8 @@
-body{color :red;
-text-align: center;}
+p{color :red;
+text-align: right;}
+h1{color :yellow;
+    text-align: right;}
+h2{color :green;
+    text-align: right;}
+h3{color :blue;
+    text-align: right;}
