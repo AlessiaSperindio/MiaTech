@@ -106,3 +106,8 @@ a:hover {
             font-family: 'Lucida Sans';
             color: rgb(236, 25, 25);
         }
+        h6
+        { 
+            font-family: 'Lucida Sans';
+            color: #FF0000;
+        }
