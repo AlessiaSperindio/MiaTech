@@ -80,3 +80,24 @@ font-size: 20px;
     font-family:Arial;
 font-size: 70px;
 }
+a {
+    color:black;
+    background-color: pink;
+}
+a:hover {
+    color: blue;
+  }
+#cambiacolor {
+    background-color: black;
+  }
+  #cambiacolor:hover {
+    background-color: blue;
+  }
+ 
+        ul li:last-child{ 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            color: saddlebrown;
+
+
+            
+        }
