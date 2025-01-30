@@ -111,3 +111,8 @@ a:hover {
             font-family: 'Lucida Sans';
             color: #FF0000;
         }
+        .rgba 
+        { color:initial
+            background-color: #ff000080;
+        }
+           /* red transparency (70%)*/
