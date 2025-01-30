@@ -1,14 +1,77 @@
-p{color :red;
-text-align: right;}
-h1{color :yellow;
-    text-align: right;}
-h2{color :green;
-    text-align: right;}
-h3{color :blue;
-    text-align: right;}
-#para1{background-color :fuchsia;color:blue;
-    text-align: center;}
-.center{color :rgb(0, 195, 255);
-    text-align: center;}
-    p,h1{color :rgb(42, 112, 65);
-        text-align: left;font-size: 30px;}
+p
+{
+    color :red;
+text-align: right;
+}
+h1
+{
+    color :yellow;
+    text-align: right;
+}
+h2
+{
+    color :green;
+    text-align: right;
+}
+h3{
+    color :blue;
+    text-align: right;
+}
+#para1
+{
+    background-color :fuchsia;color:blue;
+    text-align: center;
+}
+.center
+{
+    color :rgb(0, 195, 255);
+    text-align: center;
+}
+    p,h1
+    {
+        color :rgb(42, 112, 65);
+        text-align: left;font-size: 30px;
+    }
+        p::first-line
+         {
+            color :rgb(42, 112, 65);
+            text-align: left;
+            font: small-caps;
+        }
+            p::first-letter
+             {
+                color :blueviolet;
+                text-align: left;
+                font: status-bar;
+            font-size: 50px;
+        }
+            h3,h4::cue-region
+            {
+                text-align: center;
+                font: caption;
+            font-size: 20px;
+        }
+        .left{
+            border-color: aqua;
+            color:salmon;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    .right{
+        border-color:gainsboro;
+        color:blueviolet;
+        text-align: center;
+        background-color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.pink
+{
+    border-color: rgb(10, 10, 10);
+    background-color:salmon;
+    text-align: center;
+    color: rgb(27, 129, 95);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+}
