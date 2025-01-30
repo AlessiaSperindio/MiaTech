@@ -45,7 +45,7 @@ h3{
                 font: status-bar;
             font-size: 50px;
         }
-            h3,h4::cue-region
+            h3,h4:focus
             {
                 text-align: center;
                 font: caption;
@@ -100,4 +100,9 @@ a:hover {
 
 
             
+        }
+        .music
+         { 
+            font-family: 'Lucida Sans';
+            color: rgb(236, 25, 25);
         }
