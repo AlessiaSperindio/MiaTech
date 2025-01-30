@@ -11,4 +11,4 @@ h3{color :blue;
 .center{color :rgb(0, 195, 255);
     text-align: center;}
     p,h1{color :rgb(42, 112, 65);
-        text-align: left;}
+        text-align: left;font-size: 30px;}
