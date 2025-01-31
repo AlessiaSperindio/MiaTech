@@ -1,118 +1,128 @@
-p
-{
-    color :red;
-text-align: right;
-}
-h1
-{
-    color :yellow;
+p {
+    color: red;
     text-align: right;
 }
-h2
-{
-    color :green;
+
+h1 {
+    color: yellow;
     text-align: right;
 }
-h3{
-    color :blue;
+
+h2 {
+    color: green;
     text-align: right;
 }
-#para1
-{
-    background-color :fuchsia;color:blue;
+
+h3 {
+    color: blue;
+    text-align: right;
+}
+
+#para1 {
+    background-color: fuchsia;
+    color: blue;
     text-align: center;
 }
-.center
-{
-    color :rgb(0, 195, 255);
+
+.center {
+    color: rgb(0, 195, 255);
     text-align: center;
 }
-    p,h1
-    {
-        color :rgb(42, 112, 65);
-        text-align: left;font-size: 30px;
-    }
-        p::first-line
-         {
-            color :rgb(42, 112, 65);
-            text-align: left;
-            font: small-caps;
-        }
-            p::first-letter
-             {
-                color :blueviolet;
-                text-align: left;
-                font: status-bar;
-            font-size: 50px;
-        }
-            h3,h4:focus
-            {
-                text-align: center;
-                font: caption;
-            font-size: 20px;
-        }
-        .left{
-            border-color: aqua;
-            color:salmon;
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
-    }
-    .right{
-        border-color:gainsboro;
-        color:blueviolet;
-        text-align: center;
-        background-color: black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+p,
+h1 {
+    color: rgb(42, 112, 65);
+    text-align: left;
+    font-size: 30px;
+}
+
+.p-container p::first-line {
+    color: rgb(42, 112, 65);
+    text-align: left;
+    font: small-caps;
+}
+
+.p-container p::first-letter {
+    color: blueviolet;
+    text-align: left;
+    font: status-bar;
+    font-size: 50px;
+}
+
+h3,
+h4:focus {
+    text-align: center;
+    font: caption;
     font-size: 20px;
 }
-.pink
-{
+
+.left {
+    border-color: aqua;
+    color: salmon;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.right {
+    border-color: gainsboro;
+    color: blueviolet;
+    text-align: center;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.pink {
     border-color: rgb(10, 10, 10);
-    background-color:salmon;
+    background-color: salmon;
     text-align: center;
     color: rgb(27, 129, 95);
     font-family: 'Arial Narrow', Arial, sans-serif;
-font-size: 20px;
+    font-size: 20px;
 }
-*{
-    
-    font-family:Arial;
-font-size: 70px;
+
+* {
+
+    font-family: Arial;
+    font-size: 70px;
 }
+
 a {
-    color:black;
+    color: black;
     background-color: pink;
 }
+
 a:hover {
     color: blue;
-  }
+}
+
 #cambiacolor {
     background-color: black;
-  }
-  #cambiacolor:hover {
+}
+
+#cambiacolor:hover {
     background-color: blue;
-  }
- 
-        ul li:last-child{ 
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-            color: saddlebrown;
+}
+
+ul li:last-child {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: saddlebrown;
 
 
-            
-        }
-        .music
-         { 
-            font-family: 'Lucida Sans';
-            color: rgb(236, 25, 25);
-        }
-        h6
-        { 
-            font-family: 'Lucida Sans';
-            color: #FF0000;
-        }
-        .rgba 
-        { color:initial
-            background-color: #ff000080;
-        }
-           /* red transparency (70%)*/
+
+}
+
+.music {
+    font-family: 'Lucida Sans';
+    color: rgb(236, 25, 25);
+}
+
+h6 {
+    font-family: 'Lucida Sans';
+    color: #FF0000;
+}
+
+#rgba {
+    color: rgba(255, 99, 71, 0.5);
+}
