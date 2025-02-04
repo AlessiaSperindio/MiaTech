@@ -1,5 +1,15 @@
-.box{
+.pixel{
     background-color: blue;
     width: 200px;
     height: 200px;
 }
+html , body{
+    /*16 px to calculate rem*/
+    display:flex;
+}
+.percent{
+ /*16 px to calculate rem*/
+    background-color: palevioletred;
+    width:100% ;
+    display:flex;
+    }
