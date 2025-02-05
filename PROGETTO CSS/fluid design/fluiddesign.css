@@ -6,10 +6,12 @@
 html , body{
     /*16 px to calculate rem*/
     display:flex;
+    --global-font-size:16px;
 }
 .percent{
  /*16 px to calculate rem*/
     background-color: palevioletred;
     width:100% ;
     display:flex;
+    --global-font-size:16px;
     }
