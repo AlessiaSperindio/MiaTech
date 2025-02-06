@@ -1,6 +1,7 @@
 :root {
 --colore-principale:red;
 --dimensione-testo:18px;
+--dimensione-padding-div: 20px;
 }
 *{
     color:var(--colore-principale);
@@ -11,6 +12,7 @@ div {
     
     width: 300px ;
     border:15px ;
-    padding:50px ;background-color:blue;
+    padding: var(--dimensione-padding-div); 
+    background-color:blue;
     margin:20px ;
 }
