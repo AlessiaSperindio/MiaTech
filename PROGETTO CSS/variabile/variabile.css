@@ -1,0 +1,10 @@
+:root {
+--colore-principale:red;
+--dimensione-testo:18px;
+}
+*{
+    color:var(--colore-principale);
+    font-size: var(--dimensione-testo);
+
+    
+}
