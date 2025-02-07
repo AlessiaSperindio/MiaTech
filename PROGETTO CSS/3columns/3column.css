@@ -10,3 +10,40 @@ p{
     margin: 50px;
     display:inline-flex;
 }
+#navbar
+ {
+    position: sticky top;
+    float:inline-end;
+    top: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar a {
+    float: left;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  style{
+    padding: 16px;
+  }
+  span .sticky { 
+    border:3px solid black;
+    margin: 50px;
+    display:inline-block;
+}
