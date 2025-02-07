@@ -10,7 +10,8 @@
 }
 div {
     width: 300px ;
-    border:15px ;
+    border:60px ;
+    background-color: aquamarine;
     padding: var(--dimensione-padding-div); 
     background-color:blue;
     content: 10px;
