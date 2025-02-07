@@ -1,0 +1,12 @@
+div{
+    display:inline-block;
+    float:inherit;
+    padding:20px ;
+    background-color: beige;
+    
+}
+p{ 
+    border:3px solid black;
+    margin: 50px;
+    display:inline-flex;
+}
