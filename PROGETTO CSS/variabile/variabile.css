@@ -9,10 +9,13 @@
 
 }
 div {
-    
     width: 300px ;
     border:15px ;
     padding: var(--dimensione-padding-div); 
     background-color:blue;
+    content: 10px;
+    display:inline-block;
+    background-color: yellow;
+background-color: orange;
     margin:20px ;
 }
