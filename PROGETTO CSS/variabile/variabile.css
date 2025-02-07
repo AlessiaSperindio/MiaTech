@@ -21,3 +21,7 @@ background-color: orange;
     margin:20px ;
     background-color: azure;
 }
+.inline-block li{
+    display:inline-block;
+    
+}
