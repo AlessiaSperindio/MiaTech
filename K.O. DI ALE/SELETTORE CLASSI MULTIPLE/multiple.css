@@ -1,0 +1,37 @@
+* {
+    background-color: salmon;
+    
+    box-sizing: 300px;
+}
+
+body,
+h3 {
+    font-size: 50px;
+    border: 100px solid rgb(213, 213, 223);
+    font-style: blue;
+
+}
+
+.yoga p {
+    color: grey;
+}
+
+.title {
+  color: rgb(207, 98, 98);
+}
+
+.effect {
+    color: rgb(18, 53, 63);
+}
+
+.why {
+    color: rgb(15, 7, 121);
+}
+
+.myself {
+    color: rgb(100, 7, 143);
+}
+
+.nostress {
+    color: rgb(10, 73, 42);
+}
