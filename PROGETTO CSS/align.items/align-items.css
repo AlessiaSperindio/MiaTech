@@ -4,10 +4,11 @@
     border: 1px solid black; 
     display: flex;
     align-items: center;
+    flex-direction:row;
   }
   
   #align div {
-    flex: 1;
+    flex-direction:row;
     border: 1px solid black;
     display: flex;
     align-items: center;
