@@ -1,11 +1,13 @@
 .flexfather {
     display: flex;
-    flex-wrap: nowrap;
-    background-color: DodgerBlue;
+    flex-direction:column;
+    
+    flex-wrap: wrap;
+    background-color: rgb(2, 38, 75);
   }
   
   .flexfather > div {
-    background-color: #f1f1f1;
+    background-color: #dacb04;
     width: 100px;
     margin: 10px;
     text-align: center;
