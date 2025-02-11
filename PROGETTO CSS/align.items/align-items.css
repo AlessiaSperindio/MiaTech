@@ -1,0 +1,14 @@
+#align {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black; 
+    display: flex;
+    align-items: center;
+  }
+  
+  #align div {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+  }
