@@ -3,7 +3,7 @@
     height: 300px;
     border: 1px solid black; 
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction:row;
   }
   
@@ -11,5 +11,6 @@
     flex-direction:row;
     border: 1px solid black;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
   }
