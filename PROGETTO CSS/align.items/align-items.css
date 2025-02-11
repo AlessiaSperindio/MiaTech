@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     flex-direction:row;
+    
   }
   
   #MAMMA div {
@@ -15,14 +16,14 @@
     
   }
   .ANNA {
-    
-    
+    flex-basis: 100px;
+    flex-shrink: 3;
   }
   .ELENA {
         
-    
+    flex-basis: 100px;
   }
   .SAMUEL {
-        flex-grow: 1;
-    
+    flex-grow: 1;
+    flex-basis: 100px;
   }
