@@ -1,6 +1,6 @@
 .flexfather {
     display: flex;
-    flex-direction:column;
+    flex-direction:column-reverse;
     
     flex-wrap: wrap;
     background-color: rgb(2, 38, 75);
