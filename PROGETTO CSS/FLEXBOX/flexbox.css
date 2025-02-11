@@ -1,15 +1,18 @@
 .flexfather {
     display: flex;
-    flex-direction:wrap;
+    
     flex-wrap: wrap;
     background-color: rgb(2, 38, 75);
+   align-items: center;
   }
   
   .flexfather > div {
+    align-items: center;
     background-color: #dacb04;
     width: 100px;
     margin: 10px;
     text-align: center;
+    display:flex;
     line-height: 75px;
     font-size: 30px;
   }
