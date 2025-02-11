@@ -18,9 +18,10 @@
   .ANNA {
     flex-basis: 100px;
     flex-shrink: 3;
+    align-self: center;
   }
   .ELENA {
-        
+    align-self:flex-end;
     flex-basis: 50px;
   }
   .SAMUEL {
