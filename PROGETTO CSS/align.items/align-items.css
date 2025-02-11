@@ -1,4 +1,4 @@
-#align {
+#MAMMA{
     width: 220px;
     height: 300px;
     border: 1px solid black; 
@@ -7,10 +7,22 @@
     flex-direction:row;
   }
   
-  #align div {
+  #MAMMA div {
     flex-direction:row;
     border: 1px solid black;
     display: flex;
     justify-content: center;
+    
+  }
+  .ANNA {
+    
+    
+  }
+  .ELENA {
+        
+    
+  }
+  .SAMUEL {
+        flex-grow: 1;
     
   }
