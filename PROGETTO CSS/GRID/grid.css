@@ -1,15 +1,20 @@
-#container{
-    display:grid;
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
     
-    text-align: end;
-    align-items: center;
-    flex-direction: row;
-    grid-template-columns: auto;
 }
+
 div {
     background-color: darkgoldenrod;
-    margin:auto;
-    border:3px solid black;
+    border: 3px solid black;
     font-size: 60px;
-padding:90px;
+    text-align: center;
+
+}
+.eight {
+    grid-column:span 2 ;
+}
+.one{
+    grid-row:span 2;
 }
