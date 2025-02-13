@@ -1,0 +1,9 @@
+div {
+display:grid;
+grid-template-columns: auto auto auto auto auto;
+grid-template-rows: auto auto;
+border:5px solid blue;
+background-color: sandybrown;
+box-sizing: 500px;
+padding: 50px;
+}
