@@ -1,0 +1,11 @@
+$colors: blue, black, green, yellow, 
+.blue{
+@extend .blue;
+font-size:30px;
+color:beige;
+}
+.black{
+    @extend .black;
+    font-size:30px;
+    color:rgb(202, 202, 34);
+    }
