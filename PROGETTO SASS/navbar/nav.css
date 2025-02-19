@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+.menu .li {
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: aqua;
+}
+.menu .li:hover {
+  color: #ff0000;
+  cursor: pointer;
+}/*# sourceMappingURL=nav.css.map */

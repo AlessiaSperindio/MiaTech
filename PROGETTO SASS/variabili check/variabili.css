@@ -1,0 +1,20 @@
+.container {
+  background-color: rgb(212, 53, 79);
+  border: 2px solid black;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.container .first {
+  color: rgb(53, 53, 143);
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  text-transform: uppercase;
+}
+.container .second {
+  color: beige;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}/*# sourceMappingURL=variabili.css.map */
