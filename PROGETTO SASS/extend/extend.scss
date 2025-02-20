@@ -1,0 +1,20 @@
+%flex-layout{
+width:100%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
+}
+%background-color{
+    background-color:#e7e7e7;
+}
+.navbar{
+    @extend %flex-layout;
+    font-size: medium;
+    text-transform: uppercase;
+    #contact{
+    @extend %background-color;
+    border:2px solid #333333;
+}
+
+}
