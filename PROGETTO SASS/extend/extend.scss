@@ -29,13 +29,13 @@ box-sizing: border-box;
 }
 }
 .container{
-    width:100%;
+    width:calc(100%/3);
     @extend%div-container;
     @extend%flex-layout;
     @extend%box-container;
 }
 .containerfr {
-    width:calc(100%/3);
+    width:100%;
     @extend%div-container;
     @extend%flex-layout;
     @extend%box-container;
