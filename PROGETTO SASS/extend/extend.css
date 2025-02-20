@@ -1,4 +1,4 @@
-.navbar {
+.containerfr, .container, .navbar {
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,10 +10,31 @@
   background-color: #e7e7e7;
 }
 
+.containerfr, .container {
+  font-size: small;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: #04176d;
+  border: 2px solid yellow;
+}
+
+.containerfr, .container {
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
   font-size: medium;
   text-transform: uppercase;
 }
 .navbar #contact {
   border: 2px solid #333333;
+}
+
+.container {
+  width: 100%;
+}
+
+.containerfr {
+  width: 33.3333333333%;
 }/*# sourceMappingURL=extend.css.map */
