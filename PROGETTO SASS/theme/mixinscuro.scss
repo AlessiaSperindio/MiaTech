@@ -1,0 +1,16 @@
+@mixin snavbar {
+    color: rgb(233, 227, 238);
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid rgba(68, 68, 38, 0.788);
+    background-color: #000000;
+}
+@mixin snavbar:hover {
+    color: yellow;
+}
+//@mixin important-text {
+    //color: red;
+    //font-size: 25px;
+    //font-weight: bold;
+   // border: 1px solid blue;
+ // }

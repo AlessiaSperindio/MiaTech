@@ -1,0 +1,23 @@
+$font-size: 16px;
+
+.div {
+    font-size: $font-size;
+}
+
+@function em($pixels, $context: $font-size) {
+    @if (unitless($pixels)) $pixels: $pixels * 1px;
+}
+
+// $browser-context: 16;
+
+// @function em($pixels, $context: $browser-context) 
+//{@if (unitless($pixels)) {
+//$pixels: $pixels * 1px;
+//}
+
+//@if (unitless($context)) {
+//$context: $context * 1px;
+//}
+
+//@return $pixels / $context * 1em;
+//}
