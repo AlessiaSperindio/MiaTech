@@ -7,6 +7,9 @@ $font-size: 16px;
 @function em($pixels, $context: $font-size) {
     @if (unitless($pixels)) $pixels: $pixels * 1px;
 }
+@return $pixels / $context *1em;
+}
+
 
 // $browser-context: 16;
 
