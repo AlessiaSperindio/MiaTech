@@ -1,2 +1,9 @@
 $itacolor: green;
 $fracolor:rgb(20, 22, 145);
+@mixin ita{
+    color:$itacolor;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: yellow;
+    border: 1px solid blue;
+}
