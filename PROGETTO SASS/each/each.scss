@@ -1,0 +1,67 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+    .ul {
+        font-size: 18px;
+        text-transform: uppercase;
+        background-color: aqua;
+    }
+}
+
+$colors: (
+    "blue": #1708eb,
+    "yellow": yellow,
+    "red": rgb(235, 14, 14),
+    "salmon": rgb(235, 123, 110),
+    "grey": rgb(97, 95, 95),
+    "black":black,
+    "white":white,
+);
+//$sizes: 40px, 50px, 80px;
+
+//@each $size in $sizes {
+//.icon-#{$size} {
+//font-size: $size;
+//height: $size;
+//width: $size;
+//}
+//}
+@each $key, $val in $colors {
+    .name-#($key) {
+        background-color: $val;
+    }
+
+    .menu-#($key) {
+        background-color: $val;
+    }
+
+    .ul-#($key) {
+        background-color: $color;
+    }
+}
+
+//light variations
+@for $i from 1 to 3 {
+    .name-#{$key}-light-#{$i} {
+        color: mix(salmon, $val, $i*10);
+    }
+}
+
+@if($val !=black and$val !=white) {
+
+    //dark variations
+    @if(10>5) {
+        .name-if {
+            color: black;
+        }
+    }
+    //light variations
+@for $i from 1 to 3 {
+    .name-#{$key}-light-#{$i} {
+        color: mix(salmon, $val, $i*10);
+    }
+}
+}
