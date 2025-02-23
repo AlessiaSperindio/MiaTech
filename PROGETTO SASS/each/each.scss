@@ -65,3 +65,21 @@ $colors: (
     }
 }
 }
+//@mixin name {
+    //property: value;
+    //property: value;
+    //...
+  //}
+  @mixin .name {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+//selector {
+    //@include mixin-name;
+//}
+.name {
+    @include .name;
+    background-color: green;
+  }
