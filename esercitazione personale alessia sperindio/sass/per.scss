@@ -1,0 +1,49 @@
+@each $key, $val in $colors {
+    .text-#{$key}{
+        color:$val;
+    }
+}
+.text-hover-#{$key} {
+    &:hover{
+        color:$val;
+    }
+}
+.bg-#{$key} {
+    background-color: $val;
+}
+//variables
+button {
+    background-color: aqua;
+}
+a{
+    color:aqua;
+}
+h1{
+    border-color:aqua;
+}
+//theme
+$primary:#326dee;
+$secondary:#1ac888;
+$error:#d32752;
+$info:#f3c31c;
+h1{
+    color:$primary;
+}
+a{
+    color:$secondary;
+}
+button{
+    color:white;
+    border:0;
+    background-color: $primary;
+}
+.error{
+    color:$error;
+    border-color:$error;
+    border-style:solid;
+}
+notification{
+    color:$secondary;
+    border-color:$secondary;
+    border-style:solid;
+}

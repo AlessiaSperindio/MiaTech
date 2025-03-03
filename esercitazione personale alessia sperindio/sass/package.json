@@ -1,0 +1,18 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "npm install gulp gulp-sass sass",
+  "main": " npm install gulp gulp-sass sass --save-dev",
+  "scripts": {
+    "test": "all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "personal"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "alessia sperindio",
+  "license": "ISC"
+}
