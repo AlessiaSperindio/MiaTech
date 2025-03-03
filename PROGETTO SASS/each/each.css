@@ -4,28 +4,25 @@
   justify-content: center;
   gap: 50px;
 }
-.menu .li {
+.menu .ul {
   font-size: 18px;
   text-transform: uppercase;
   background-color: aqua;
 }
-.menu .li:hover {
-  color: #ff0000;
-  cursor: pointer;
+.menu .ul li:hover {
+  color: purple;
 }
 
-.home-blue {
-  background-color: blue;
-}
+/* @each $key, $val in $colors {
+    name-#($key) {
+        background-color: $val;
+    }
 
-.home-yellow {
-  background-color: yellow;
-}
+    .menu-#($key) {
+        background-color: $val;
+    }
 
-.home-red {
-  background-color: red;
-}
-
-.home-salmon {
-  background-color: salmon;
-}/*# sourceMappingURL=each.css.map */
+    .ul-#($key) {
+        background-color: $color;
+    }
+} *//*# sourceMappingURL=each.css.map */

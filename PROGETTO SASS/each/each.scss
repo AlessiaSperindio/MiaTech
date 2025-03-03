@@ -1,3 +1,5 @@
+$noHover:true;
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -5,9 +7,18 @@
     gap: 50px;
 
     .ul {
+
         font-size: 18px;
         text-transform: uppercase;
         background-color: aqua;
+        @if $noHover{
+            li:hover{
+                color:purple;
+            }
+
+        }@else{li:hover{
+            color:rgb(202, 175, 202);
+        }}
     }
 }
 
@@ -29,8 +40,8 @@ $colors: (
 //width: $size;
 //}
 //}
-@each $key, $val in $colors {
-    .name-#($key) {
+/* @each $key, $val in $colors {
+    name-#($key) {
         background-color: $val;
     }
 
@@ -41,45 +52,7 @@ $colors: (
     .ul-#($key) {
         background-color: $color;
     }
-}
+} */
 
-//light variations
-@for $i from 1 to 3 {
-    .name-#{$key}-light-#{$i} {
-        color: mix(salmon, $val, $i*10);
-    }
-}
 
-@if($val !=black and$val !=white) {
-
-    //dark variations
-    @if(10>5) {
-        .name-if {
-            color: black;
-        }
-    }
-    //light variations
-@for $i from 1 to 3 {
-    .name-#{$key}-light-#{$i} {
-        color: mix(salmon, $val, $i*10);
-    }
-}
-}
-//@mixin name {
-    //property: value;
-    //property: value;
-    //...
-  //}
-  @mixin .name {
-  color: red;
-  font-size: 25px;
-  font-weight: bold;
-  border: 1px solid blue;
-}
-//selector {
-    //@include mixin-name;
-//}
-.name {
-    @include .name;
-    background-color: green;
-  }
+    

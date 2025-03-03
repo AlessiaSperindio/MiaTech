@@ -4,23 +4,9 @@ $font-size: 16px;
     font-size: $font-size;
 }
 
-@function em($pixels, $context: $font-size) {
-    @if (unitless($pixels)) $pixels: $pixels * 1px;
+@function px-to-em($pixels, $context: $font-size) {
+    @return ($pixels/$context)*1em;
 }
-@return $pixels / $context *1em;
+p{
+    font-size: px-to-em(30px);
 }
-
-
-// $browser-context: 16;
-
-// @function em($pixels, $context: $browser-context) 
-//{@if (unitless($pixels)) {
-//$pixels: $pixels * 1px;
-//}
-
-//@if (unitless($context)) {
-//$context: $context * 1px;
-//}
-
-//@return $pixels / $context * 1em;
-//}
