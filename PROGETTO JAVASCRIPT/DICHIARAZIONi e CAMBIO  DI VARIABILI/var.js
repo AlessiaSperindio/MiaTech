@@ -6,3 +6,4 @@ let myNumber= 5;
 console.log(myNumber);
 myNumber = 10;
 console.log(myNumber);
+
