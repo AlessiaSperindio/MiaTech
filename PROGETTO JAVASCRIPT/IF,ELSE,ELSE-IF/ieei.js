@@ -1,9 +1,16 @@
-let score=(prompt=parseInt);
-if(score [100]&[90]){
-console.log("voto ottimo")
-}else if([70]&[89])
-{console.log("voto buono")}
-else if([60]&[69])
-    {console.log("voto sufficiente")}
-else if([0]&[59])
-    {console.log("voto insufficiente")}
+let voto = 70;
+switch(voto){
+    case 1:
+    console.log("ottimo");
+    breack
+    case 2:
+    console.log("buono");
+    breack
+    case 3:
+    console.log("sufficiente");
+    breack
+    case 4:
+    console.log("insufficiente");
+    breack
+    default:
+    console.log("numero non valido!");}
