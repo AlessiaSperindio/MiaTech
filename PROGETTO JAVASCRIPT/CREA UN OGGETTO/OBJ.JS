@@ -8,3 +8,5 @@ let property = person.age ;
 console.log(property);
 person.age = 25;
 console.log(person);
+person.job = "teacher";
+console.log(person);
