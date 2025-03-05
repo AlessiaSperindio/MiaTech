@@ -10,3 +10,7 @@ person.age = 25;
 console.log(person);
 person.job = "teacher";
 console.log(person);
+for (let property in person) {
+    console.log(`${property}: ${person[property]}`);
+  }
+  
