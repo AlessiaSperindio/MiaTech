@@ -30,6 +30,3 @@ console.log(expenses);
 
 
 
-
-
-
