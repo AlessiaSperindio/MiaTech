@@ -1,10 +1,15 @@
-let numero= prompt ("numero");
-let word= "document";
+let numero= 3;
+
 console.log(numero);
-do{parola=word()}
-while{ (word.lenght<5);
-    console.log(word);
-}
 
 
-    
+
+
+do{
+console.log(numero)
+numero++
+}while(
+    numero*numero<(word.length)<=5
+)
+
+
