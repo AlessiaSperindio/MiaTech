@@ -25,3 +25,4 @@ class Cavalli extends Automobile {
 }
 let velocità = new Cavalli("Mercedes", "benz", 2010, "190cv");
 console.log(velocità);
+console.log(Automobile);
