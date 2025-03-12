@@ -60,10 +60,10 @@ class Automobile {
         this.modello = modello
         this.anno = anno
     }
-     descrizione() {
-        
+    descrizione() {
+
         return `${this.marca} ${this.modello} ${this.anno}`
-        
+
     };
 }
 
@@ -77,38 +77,23 @@ class Elettrica extends Automobile {
         super(marca, modello, anno);
         this.autonomia = autonomia;
     }
-    descrizione(){
-        return super.descrizione()+` ${this.autonomia}`
+    descrizione() {
+        return super.descrizione() + ` ${this.autonomia}`
     }
-}
+};
 let alimentazione = new Elettrica("mercedes", "benz", 2010, "500 km");
 console.log(alimentazione.descrizione());
-
-/*aggiungi un metodo ricarica (km )che aumenta l'autonomia della batteria*/ 
-class AddAutonomy extends Automobile {
-    
-    ricarica = "km"
-    constructor(marca, modello, anno, autonomia, ricarica) {
-        super(marca, modello, anno, autonomia);
-        this.ricarica = ricarica;
-    }
-    descrizione(){
-        return super.descrizione()+ ` ${this.ricarica}`
-    }
+function Qualità(marca, modello, anno) {
+    this.marca = marca;
+    this.modello = modello;
+    this.anno = anno;
 }
-let recharge = new AddAutonomy("mercedes", "benz", 2010,"500km","20km");
-console.log(recharge.descrizione());
-console.log(alimentazione.descrizione());
 
+Qualità.prototype.autonomia = "autonomia 500km"
+let addAutonomia = new Qualità("mercedes", "benz", 2010, "500km")
+console.log(addAutonomia.autonomia);
+Qualità.prototype.ricarica = "ricarica 20km"
+let recharge = new Qualità("mercedes", "benz", 2010, "500km", "20km")
+console.log(recharge.ricarica);
 
-function aR(alimentazione){
-    let ricaricaAutonomia=alimentazione
-    function altatensione (ricarica){
-    return ricaricaAutonomia+ricarica}
-    return altatensione}
-    
-    let piuAutonomia=aR(500);
-    console.log(piuAutonomia(20));
-    
-    
 
