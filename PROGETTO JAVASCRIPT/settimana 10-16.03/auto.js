@@ -90,5 +90,31 @@ function MostraChilometraggio(addkm){
 const audiTotalkm= new Automobile("Audi","A4",2007,"100000km","200000km")
 console.log(audiTotalkm,MostraChilometraggio());
 
-/*get: function () {return this.firstName + " " + this.lastName;}
-});*/
+
+/*sottoclasse Elettrica
+crea una sottoclasse chiamata Elettrica che entende la classe Automobile.
+class Elettrica extends Automobile{
+this}
+aggiungi una nuova proprietà autonomia per rappresentare l'autonomia della batteria in km.
+sovrascrivi il metodo descrizione()per includere anche l'autonomia.
+aggiungi un metodo ricarica(km) che aumenta l'autonomia della batteria.*/
+
+class Elettrica extends Automobile {
+    autonomia = ""
+    constructor(marca, modello, anno, autonomia) {
+        super(marca, modello, anno);
+        this.autonomia = autonomia;
+    }
+    descrizione(){
+        return super.descrizione()+` ${this.autonomia}`
+    }
+}
+let alimentazione = new Elettrica("mercedes", "benz", 2010, "500 km");
+console.log(alimentazione.descrizione());
+
+function ricarica(){
+    this.ricarica=ricarica
+    return this.ricarica+` ${this.autonomia}`
+}
+const totalkm= new Elettrica ("mercedes","benz", 2010,"10000km")
+console.log(totalkm.descrizione());
