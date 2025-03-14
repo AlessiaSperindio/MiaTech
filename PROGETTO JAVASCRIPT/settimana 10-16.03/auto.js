@@ -80,8 +80,15 @@ let km = new Automobile ("Audi","A4",2010,"100000km")
     this.chilometraggio=chilometraggio
  return "100500km";
 }
-const audiA4 = new Automobile("Audi","A4",2007,"100000km","150000km")
+const audiA4 = new Automobile("Audi","A4",2007,"100000km","100500km")
 console.log(audiA4,Aggiungikm(km));
+
+function MostraChilometraggio(addkm){
+    this.addkm=addkm
+ return "200000km"
+}
+const audiTotalkm= new Automobile("Audi","A4",2007,"100000km","200000km")
+console.log(audiTotalkm,MostraChilometraggio());
 
 /*get: function () {return this.firstName + " " + this.lastName;}
 });*/
