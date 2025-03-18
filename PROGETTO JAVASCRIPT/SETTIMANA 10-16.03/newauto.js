@@ -1,128 +1,60 @@
-//esercizio1:
+
 
 class Automobile {
-
-  constructor(marca, modello, anno, chilometraggio) {
+  autonomia;
+  constructor(marca, modello, anno, initialnumber = 1000,) {
     this.marca = marca;
     this.modello = modello;
     this.anno = anno;
-    this.chilometraggio = chilometraggio;
+    this.chilometraggio = initialnumber
   }
-  descrizione(marca, modello, autonomia) {
+  descrizione = (marca, modello, autonomia) => {
     this.marca = marca;
     this.modello = modello;
     this.autonomia = autonomia;
 
-    return (`questa ${this.marca} ha ${this.modello} e ${this.autonomia}`);
+
+    return (`questa ${this.marca} è del modello ${this.modello} e ha ${this.autonomia}km di autonomia`);
 
   }
 
-aggiungiChilometri(chilometraggio = 0) {
-  this.chilometraggio += chilometraggio;
 
-  return (`questa ${this.marca} ha ${this.chilometraggio}km`);
+  aggiungiChilometri = (initialnumber = 1000) => {
+    this.chilometraggio += initialnumber;
+
+    return (`questa ${this.marca} ha ${this.chilometraggio} km`);
+  }
+
+  mostraChilometraggio = (initialnumber = 100000) => {
+    this.chilometraggio += initialnumber;
+    return (`${this.marca} runs with km ${this.chilometraggio}.`);
+  }
+  
 }
-
- mostraChilometraggio(chilometraggio = 100000) {
-  this.chilometraggio += chilometraggio;
-  return (`${this.marca} runs with km ${this.chilometraggio}.`);
-}
-
-}
-const ford = {
-  marca: "Ford",
-  modello: "focus",
-  autonomia: "300km",
-}
-
-console.log(ford.descrizione());
-const ford2 = {
-  __proto__: ford,
-}
-console.log(ford2.descrizione());
-
-
-
-let chilometraggio = ("100000 km");
-
-chilometraggio.__proto__ = audi;
-console.log(audi.chilometraggio);
-
-
-let audi = [
-  new Automobile("Audi2", "TT", 2008, "1000000km", "500km"),
-  new Automobile("Audi1", "A4", 2007, "200000km", "400km"),
-];
-
-
-console.log(audi.aggiungiChilometri());
-console.log(audi.mostraChilometraggio());
-console.log(audi.descrizione());
-
 
 
 class Elettrica extends Automobile {
 
-
-  constructor(marca, autonomia) {
-    super(marca);
+  constructor (autonomia = 0,add = 0) {
+    super (autonomia,add );
     this.autonomia = autonomia;
+    this.add = add;
+
   }
-  let volkswagen = {
-    marca:"volkswagen",
-    autonomia:"500km",
-      km: "300km"
-  }
-        ricarica(marca,autonomia,km) {
+  ricarica = (add = 300) => {
+    this.autonomia += add;
+    return (`${this.marca} aumenta di  ${this.autonomia} km la sua autonomia grazie alla ricarica .`)
+      }
 
-  this.km = km;
-  return ricarica = (`con la ricarica massimizzata, il motore della macchina ${this.marca} arriva a ${this.autonomia}+ ${this.km} km di autonomia`);
 }
-
-saluta()
-{
-  return (`ciao!Questa ${this.marca} è di questo ${this.modello}`);
-}
-};
-
-const saab = {
-  marca: "Saab",
-  modello: "900turbo"
-}
-console.log(saab.saluta());
-const novemilaTurbo = {
-  __proto__: saab,
-};
-console.log(novemilaTurbo.method());
-
-
-saab.marca = "Saab";
-saab.modello = "900turbo"
-console.log(saab.saluta()); 
-      
-        
-      
-
-
-
-
-
-
-
-
-console.log(volkswagen.ricarica());
-
-let fiat = {
-  marca: "Fiat",
-  modello: "panda"
-};
-let jeep = {
-  marca: "jeep",
-  modello: "renegade"
-};
-
-fiat.__proto__ = Automobile;
-jeep.__proto__ = Automobile;
+const ford = new Automobile("ford");
+const km = new Automobile("ford", 20000);
+const showKm = new Automobile("ford", 20000 + 1000);
+const recharge = new Elettrica ("ford", 0)
+console.log(ford.descrizione("ford", "fusion",500));
+console.log(km.aggiungiChilometri(20000));
+console.log(showKm.mostraChilometraggio());
+console.log(recharge.ricarica());
 
 
 
