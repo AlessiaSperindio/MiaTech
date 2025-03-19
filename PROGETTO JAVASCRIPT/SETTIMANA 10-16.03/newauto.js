@@ -35,13 +35,15 @@ class Automobile {
 
 class Elettrica extends Automobile {
 
-  constructor (autonomia = 0,add = 0) {
-    super (autonomia,add );
+  constructor (marca,modello,anno,chilometraggio,ricarica,autonomia = 0,add = 0) {
+    super (modello,anno,chilometraggio,ricarica);
+    this.marca = marca;
     this.autonomia = autonomia;
     this.add = add;
 
   }
   ricarica = (add = 300) => {
+    
     this.autonomia += add;
     return (`${this.marca} aumenta di  ${this.autonomia} km la sua autonomia grazie alla ricarica .`)
       }
