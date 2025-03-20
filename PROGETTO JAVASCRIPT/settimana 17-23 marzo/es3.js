@@ -9,12 +9,21 @@ console.log(ale);
 console.log(anna);
 
 console.log(ele);
-const [...other] = array;
-const duo =[4];
-const tris = [5];
-console.log(duo);
-console.log(tris);
 
+
+const [...others1] = array;
+const [...others2] = array;
+
+
+console.log(others1); 
+const grandpa = (others1 = 4);
+const grandma = (others2 = 5);
+console.log(array);
+
+/*non stai rispettando la consegna,
+ dopo aver dichiarato l'array e averlo destrutturato
+  devi solo fare in modo di assegnare dei valori predefiniti a
+   degli elementi mancanti nell'array originale*/
 
 
 
