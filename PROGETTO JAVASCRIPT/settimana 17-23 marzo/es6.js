@@ -1,8 +1,15 @@
 const object = {
     nome: " alessia",
-    cognome: "sperindio",
     anni: "31",
-    hobby: "meditazione",
     passioni: "judo",
-    figli: ("Annapaola", "Vittoria Elena"),
-};
+ };
+const {nome,anni,passioni,cognome = "sperindio", figli= 2,hobby = "meditazione",} = object;
+const cognomeMio = cognome;
+const figliNumero = figli;
+const hobbyMio = hobby;
+console.log(cognomeMio);
+console.log(hobbyMio);
+console.log(figliNumero);
+
+
+
