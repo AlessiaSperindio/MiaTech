@@ -1,18 +1,7 @@
-let primoPiatto = {
-    pasta: "pomodoro",
-    riso: "cantonese",
-    lasagna : "bolognese",
-    
-  };
-  
-  let json = JSON.stringify(primoPiatto);
-  
- console.log(typeof json); 
-  
-  console.log(json);
+const primi = { "pasta": "pomodoro", "riso": "cantonese", "lasagna": "bolognese" };
 
-  const jsonParse = JSON.parse(primoPiatto);
+const obj = JSON.parse('{"pasta":"pomodoro","riso":"cantonese","lasagna":"bolognese"}');
 
-  console.log(typeof jsonParse);
-  console.log(jsonParse);  
+console.log(obj);
+
 
