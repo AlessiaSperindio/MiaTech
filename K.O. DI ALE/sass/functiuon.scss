@@ -1,0 +1,8 @@
+$pixels: 16;
+
+@function em($pixelsnow, $context: $pixel) {
+  @return #{$pixelsnow/$context}em;
+}
+h1 {
+  font-size: em(32);
+}
