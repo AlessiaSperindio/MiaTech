@@ -1,0 +1,13 @@
+div {
+    width: 200px;
+    height: 200px;
+    background: rgb(17, 107, 21);
+    bottom: 0;
+    right: 20px;
+    border: 3px solid #73AD21;
+}
+
+div.greenbox {
+    position: absolute;
+}
+
