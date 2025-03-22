@@ -1,7 +1,7 @@
-$pixels: 16;
 
-@function em($pixelsnow, $context: $pixel) {
-  @return #{$pixelsnow/$context}em;
+
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
 }
 h1 {
   font-size: em(32);
