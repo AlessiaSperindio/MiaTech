@@ -43,7 +43,7 @@ class Automobile {
             return ("Per favore, inserisci un numero di chilometri positivo.");
         }
     }
-    aggiungiChilometri() {
+    mostraContatore() {
         return this.#contatoreChiamate;
     }
 };
@@ -53,7 +53,7 @@ class Automobile {
 const chiama = new Automobile("jeep", "model3", 1999, 200);
 
 console.log(chiama.addChilometri(4));
-console.log(chiama.aggiungiChilometri());
+console.log(chiama.mostraContatore());
 const lamborghini = new Automobile("lamborghini", "model1", 2000, 2025)
 
-lamborghini.aggiungiChilometri(2);
+lamborghini.mostraContatore(2);
