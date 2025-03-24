@@ -32,7 +32,7 @@ class Automobile {
     }
 
 
-    addChilometri(km = 0) {
+    aggiungiChilometri(km = 0) {
         if (km > 0) {
             for (let i = 0; i < km; i++) {
                 this.#incrementaContatore();
@@ -52,7 +52,7 @@ class Automobile {
 
 const chiama = new Automobile("jeep", "model3", 1999, 200);
 
-console.log(chiama.addChilometri(4));
+console.log(chiama.aggiungiChilometri(4));
 console.log(chiama.mostraContatore());
 const lamborghini = new Automobile("lamborghini", "model1", 2000, 2025)
 
