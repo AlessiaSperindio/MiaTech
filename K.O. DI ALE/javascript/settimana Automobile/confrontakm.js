@@ -1,7 +1,4 @@
 class Automobile {
-    static auto1 = "auto 1" ;
-    static auto2 = "auto 2";
-    static chilometraggio = "chilometraggio";
 
     constructor(marca, modello, anno, chilometraggio, controllaChilometri, initialnumber = 0,) {
         this.marca = marca;
@@ -29,27 +26,20 @@ class Automobile {
         if (this._controllaChilometri = chilometraggio > initialnumber)
             return `  Ha superato i ${this.initialnumber} km ,è arrivato a ${this.chilometraggio} km.`
     }
-    
-    static confrontaChilometri(auto1,auto2,chilometraggio = 0 ) {
-        auto1  = auto2 
-        return `confrontando il ${this.chilometraggio}, ${this.auto1} ha gli stessi km di ${this.auto2}`;
-      }
-      static confrontachilometri(auto1,auto2,chilometraggio) {
-        chilometraggio=auto1 < auto2 
-        return `I ${this.auto1} km della prima auto sono meno dei  ${this.auto2} km della seconda auto`;
-      }
+
+    static confrontaChilometraggio(auto1, auto2) {
+        if (auto1.chilometraggio > auto2.chilometraggio) {
+            return ` ${auto1.marca} ${auto1.modello} ha un chilometraggio maggiore di ${auto2.marca} ${auto2.modello}`;
+        } else if (auto1.chilometraggio < auto2.chilometraggio) {
+            return `${auto2.marca} ${auto2.modello} ha un chilometraggio maggiore di ${auto1.marca} ${auto1.modello}.`;
+        } else {
+            return `Entrambe le automobili hanno lo stesso chilometraggio.`;
+        }
     }
-    
-const primaFraLeDue = new Automobile("porche", "carrera","", "200000", "", 100000);
-const secondaFraLeDue = new Automobile ("lamborghini", "model1","", "20000", "", 1000);
-console.log(primaFraLeDue);
-console.log(secondaFraLeDue);
+};
 
-
-console.log(this.chilometraggio.auto1);
-console.log(Automobile.auto1(20000)); 
-console.log(Automobile.auto2(3000)); 
-
-
-
+const auto1 = new Automobile("porche", "carrera", "", "200000", "", 100000);
+const auto2 = new Automobile("lamborghini", "model1", "", "20000", "", 1000);
+const risultato = Automobile.confrontaChilometraggio(auto1, auto2);
+console.log(risultato);
 
