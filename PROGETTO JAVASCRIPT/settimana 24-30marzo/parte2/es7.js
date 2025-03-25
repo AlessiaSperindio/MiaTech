@@ -10,9 +10,12 @@ creaPromessa()
     .then((numero) => {
         return numero * 2; 
     })
-    .then((risultato) => {
-        return risultato + 3; 
+    .then((numeroDoppio) => {
+        return numeroDoppio + 3; 
     })
     .then((risultatoFinale) => {
         console.log(risultatoFinale); 
+    })
+    .catch((errore) => {
+        console.error('Si è verificato un errore:', errore);
     });
