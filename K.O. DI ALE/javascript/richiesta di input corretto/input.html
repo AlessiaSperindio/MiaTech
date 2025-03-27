@@ -10,6 +10,14 @@
         scrivi un ciclo do-while che si ripete fino a quando non inserisci una parola (con il prompt)
         che sia lunga almeno 5 caratteri.
         stampa la parola dopo il ciclo.</p>
-    <script src="./input.js"></script>
+    <script src="./input.js">
+        let parola;
+
+do {
+    parola = prompt("Inserisci una parola di almeno 5 caratteri:");
+} while (parola.length < 5);
+
+console.log("Hai inserito la parola:", parola);
+    </script>
 </body>
 </html>
