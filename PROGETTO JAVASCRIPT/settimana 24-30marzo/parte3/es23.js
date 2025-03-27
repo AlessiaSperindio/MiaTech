@@ -1,5 +1,6 @@
-const apiUrl = 'https://api.example.com/data'; 
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; 
+const apiUrl = 'https//it.wikipedia.org/wiki/Pagina_principale';  
+
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/corsdemo'
 async function fetchData() {
     try {
         const response = await fetch(proxyUrl + apiUrl);

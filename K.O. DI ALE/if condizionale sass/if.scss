@@ -1,0 +1,27 @@
+$noHover: false; 
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+
+  .nav-item {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+    
+    @if $noHover {
+     
+      &:hover {
+        color: inherit; 
+      }
+    } @else {
+      
+      &:hover {
+        color: #ffcc00; 
+      }
+    }
+}
+}
+
+
