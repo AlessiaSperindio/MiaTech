@@ -1,9 +1,9 @@
-const apiUrl = 'https//it.wikipedia.org/wiki/Pagina_principale';  
+const apiUrlproxyUrl = 'https://cors-anywhere.herokuapp.com/corsdemohttps//it.wikipedia.org/wiki/Pagina_principale';  
 
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/corsdemo'
+
 async function fetchData() {
     try {
-        const response = await fetch(proxyUrl + apiUrl);
+        const response = await fetch(apiUrlproxyUrl);
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
