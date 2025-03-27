@@ -1,29 +1,25 @@
-async function sendPostRequest() {
-    const url = 'https://api.example.com/endpoint'; 
-    const data = {
-        key1: 'value1',
-        key2: 'value2'
-    };
+const data = {
+    nome: "Alessia",
+    età: 31
+};
 
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-
-        const responseData = await response.json();
-        console.log(responseData);
-    } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
+fetch('https://jsonplaceholder.typicode.com/comments', {
+    method: 'POST', 
+    headers: {
+        'Content-Type': 'application/json' 
+    },
+    body: JSON.stringify(data) 
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
     }
-}
-
-
-sendPostRequest();
+    return response.json(); 
+})
+.then(data => {
+    console.log('Success:', data); 
+})
+.catch((error) => {
+    console.error('Error:', error); 
+});
