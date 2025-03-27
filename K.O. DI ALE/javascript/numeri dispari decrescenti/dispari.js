@@ -1,12 +1,5 @@
-
-
-
-const a = decreasing(Odd);
-const counter = 0;
-
-while(counter < a){
-    if ((counter % 2) != 0){
-        System.out.println(counter);
-    }
-    counter--;
+let numero = 9; 
+while (numero >= 1) {
+    console.log(numero);
+    numero -= 2; 
 }
