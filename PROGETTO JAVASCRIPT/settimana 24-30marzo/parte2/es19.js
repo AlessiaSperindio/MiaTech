@@ -15,5 +15,5 @@ function fetchData(url) {
 }
 
 
-const apiUrl = 'https://api.example.com/data'; 
+const apiUrl = 'https://jsonplaceholder.typicode.com/comments'; 
 fetchData(apiUrl);
