@@ -1,35 +1,30 @@
 class Automobile {
-
-
     constructor(marca, modello) {
         this.marca = marca;
         this.modello = modello;
-       
     }
 
-    static verificaIstanza(oggetto, classe) {
-        if (oggetto instanceof classe) {
-            return (`${oggetto.constructor} è un'istanza di ${classe}.`);
+    static verificaIstanza(obj, classe) {
+        if (obj instanceof classe) {
+            return `L'oggetto è un'istanza della classe ${classe.name}.`;
         } else {
-            return (`${oggetto.constructor} non è un'istanza di ${classe}.`);
+            return `L'oggetto non è un'istanza della classe ${classe.name}.`;
         }
     }
 }
 
-class Camion extends Automobile {
+
+class Camion {
     constructor(marca, modello) {
-        super(marca, modello)
         this.marca = marca;
         this.modello = modello;
     }
-};
+}
 
 
 const auto = new Automobile('Fiat', 'model1');
 const camion = new Camion('Iveco', 'model2');
 
 
-console.log(auto instanceof Automobile);
-console.log(camion instanceof Camion);
 console.log(Automobile.verificaIstanza(auto, Automobile));
-console.log(Automobile.verificaIstanza(camion, Automobile));
+console.log(Automobile.verificaIstanza(camion, Automobile)); 
