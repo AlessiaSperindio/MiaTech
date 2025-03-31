@@ -1,4 +1,4 @@
-const apiUrlproxyUrl = 'https://cors-anywhere.herokuapp.com/corsdemohttps//it.wikipedia.org/wiki/Pagina_principale';  
+const apiUrlproxyUrl = 'https://cors-anywhere.herokuapp.com/https://it.wikipedia.org/wiki/Pagina_principale';  
 
 
 async function fetchData() {
