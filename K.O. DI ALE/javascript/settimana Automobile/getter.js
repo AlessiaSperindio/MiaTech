@@ -1,16 +1,16 @@
 class Automobile {
-    #chilometraggio = 0;
+    _chilometraggio = 0;
 
     constructor(marca, modello, anno, km) {
         this.marca = marca;
         this.modello = modello;
         this.anno = anno;
         this.km = km;
-        this.#chilometraggio = km;
+        this._chilometraggio = km;
     }
 
     getChilometraggio() {
-        return this.#chilometraggio;
+        return this._chilometraggio;
     }
 };
 
