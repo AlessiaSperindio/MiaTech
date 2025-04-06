@@ -36,9 +36,7 @@ class Automobile {
     }
   
   }
-  Elettrica.prototype.saluta = function () {
-    console.log(`hi! My name is ${this.marca} and ${this.modello}`);
-};
+  
   const myCar = new Automobile('fiat', 'panda', 2020, 10000)
   const elettrica = new Elettrica('tesla', 'model1', 2025, 10000, 400)
   
@@ -48,4 +46,6 @@ class Automobile {
   Automobile.prototype.saluta = function() {
     return `Ciao! Sono un'auto ${this.marca} ${this.modello}.`
 };
-
+Elettrica.prototype.saluta = function () {
+    console.log(`hi! My name is ${this.marca} and ${this.modello}`);
+};
