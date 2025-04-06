@@ -38,6 +38,7 @@ class Automobile {
                 this.#incrementaContatore();
             }
             return (`Aggiunti ${km} chilometri. Contatore attuale: ${this.#contatoreChiamate}`);
+            
         }
         else {
             return ("Per favore, inserisci un numero di chilometri positivo.");
@@ -50,10 +51,7 @@ class Automobile {
 
 
 
-const chiama = new Automobile("jeep", "model3", 1999, 200);
 
-console.log(chiama.aggiungiChilometri(4));
-console.log(chiama.mostraContatore());
-const lamborghini = new Automobile("lamborghini", "model1", 2000, 2025)
-
-lamborghini.mostraContatore(2);
+const miaAuto = new Automobile();
+miaAuto.aggiungiChilometri(5);
+console.log(miaAuto.mostraContatore());
