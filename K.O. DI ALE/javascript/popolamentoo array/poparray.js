@@ -1,7 +1,7 @@
 let parole = [];
 
 for (let i = 0; i < 5; i++) {
-    let parola = prompt("Inserisci una parola:");
+    let parola = prompt("Inserisci 5 parole:");
     parole.push(parola);
 }
 
