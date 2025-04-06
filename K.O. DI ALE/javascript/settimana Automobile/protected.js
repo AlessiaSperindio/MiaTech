@@ -32,22 +32,19 @@ console.log(superoLimitekm.controllaChilometri(200000));
 
 
 class Elettrica extends Automobile {
-    _controllaChilometri
+    
     constructor(autonomia, chilometraggio, initialnumber, controllaChilometri) {
         super(autonomia, chilometraggio, initialnumber, controllaChilometri);
         this.initialnumber = initialnumber;
         this.chilometraggio = chilometraggio;
         this.autonomia = autonomia;
-        this._controllaChilometri = controllaChilometri;
+        
     }
 
     ricarica(km) {
         this.autonomia += km;
     }
-    controllaChilometri = (chilometraggio = 0, initialnumber = 100000) => {
-        if (this._controllaChilometri = chilometraggio > initialnumber)
-            return `  Ha superato i ${this.initialnumber} km ,è arrivato a ${this.chilometraggio} km.`
-    }
+    
 };
 
 const superoLimitekmEl = new Elettrica("", "250000", "100000", "250000");
