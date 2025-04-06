@@ -1,3 +1,3 @@
-const testo = document.getElementById("#mioParagrafo").innerText;
-
-document.getElementById("#mioParagrafo").innerText= "cambia il testo!";
+function modificaTesto() {
+    document.getElementById("mioParagrafo").innerText = "Il testo del paragrafo è stato modificato!";
+}
