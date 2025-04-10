@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" ></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#f7cac9",
+                        secondary: "#eea29a",
+                    },
+                    spacing:{
+                        padding: "pe-4",
+                        margin: "ml-2",
+                    }
+                },
+            },
+        }
+    </script>
+
 </head>
 <body>
 
-    <p class="-red-400">
+    <p class="text-primary p-padding m-margin">
         Aggiungi nuove dimensioni di spacing
          (margin e padding) al file di configurazione
           e utilizza queste nuove dimensioni in una pagina HTML.
