@@ -7,10 +7,31 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com">
     </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                font: `bold`,
+                text: `3xl`,
+                margin: `mb-2`,
+                
+            },
+            extend: {
+                colors: {
+                    primary: "#f7cac9",
+                    secondary: "#eea29a",
+                },
+                spacing: {
+                    '18': '4.5rem', 
+                    '22': '5.5rem',
+                }
+            },
+        }
+
+    </script>
 </head>
 
 <body>
-    <div class="bg-cyan-400 p-18 my-22">
+    <div class="mb-2 font-bold text-3xl ">
         <h2>hello world!</h2>
     </div>
     <p>
