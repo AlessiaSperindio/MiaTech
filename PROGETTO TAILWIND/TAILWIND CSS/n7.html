@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+module.exports = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary : "cyan-300",
+                        secondary : "black",
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                    },
+                },
+            },
+            variants: {},
+            plugins: [],
+        }
+    </script>
 </head>
 <body>
+    <button class="border-solid text-2x1 text-primary">1</button>
+    <button class="text-center text-secondary">2</button>
+    <button class="text-xl bg-primary">3</button>
+    <button class="text-white bg-black">4</button>
+    <button class="font-bold bg-primary">5</button>
+    <button class="font-bold underline bg-secondary">6</button>
+    <button class="p-18 text-2x1 text-secondary bg-primary">7</button>
     <p>
         Definisci una nuova palette 
         di colori personalizzata nel file 
