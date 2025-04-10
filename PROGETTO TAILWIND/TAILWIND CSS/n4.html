@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" ></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f7cac9',
+                        secondary: '#eea29a',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
+
 <body>
-    <p>
-        Modifica la configurazione di Tailwind 
-        (nella <head> della pagina) 
-        per aggiungere un nuovo colore personalizzato alla palette.
+    <p class="bg-primary font-bold underline">
+        Modifica la configurazione di Tailwind
+        (nella head della pagina)
+            per aggiungere un nuovo colore personalizzato alla palette.
     </p>
-    
+    <h1 class="bg-primary">hello world</h1>
+    <h2 class="bg-secondary">hello world</h2>
+    <h3 class="bg-primary">hello world</h3>
+    <h4 class="bg-secondary">hello world</h4>
+    <h5 class="bg-primary">hello world</h5>
+    <h6 class="bg-secondary">hello world</h6>
+
 </body>
+
 </html>
