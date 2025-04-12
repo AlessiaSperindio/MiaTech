@@ -6,8 +6,91 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com" ></script>
     
+    <style type="text/tailwindcss">
+        @layer components {
+        .btn {
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+    }
+        .btn-primary{
+            @apply btn text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .btn-secondary{
+            @apply btn text-white bg-secondary hover:opacity-95 active:border-2
+    }
+        .btn-disabled{
+           @apply btn invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+        }
+        .input{
+        border: 3px solid rgb(202, 16, 16);
+        padding:10px ;
+        border-radius:8px;
+        }
+        .input-primary{
+            @apply input text-primary  focus:border-2
+        }
+        .input-secondary{
+            @apply input text-secondary bg-amber-300 focus:border-2
+        }
+    .input-disabled{
+         @apply input invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+    }}
+        </style>
 </head>
+
 <body>
-    
+    <p>
+        
+        Crea un componente personalizzato utilizzando la funzionalità di layering di Tailwind e utilizzalo in una pagina HTML.
+            
+    </p>
+    <span>
+        <button class="btn">CLICCA QUI!</button>
+    </span>
+    <form action="/url" method="GET">
+        <label for="username"> input di prova</label>
+        <input class="input" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>
+    </form>
+    <span>
+        <button class="btn-primary">CLICCA QUI!</button>
+    </span>
+    <form action="/url" method="GET">
+        <label for="username"> input di prova</label>
+        <input class="input-primary" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>
+    </form>
+    <span>
+        <button class="btn-disabled bg-fuchsia-300">CLICCA QUI!</button>
+    </span>
+    <form action="/url" method="GET">
+        <label for="username"> input di prova</label>
+        <input class="input-secondary" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>
+    </form>
+    <span>
+        <button class="btn-secondary">CLICCA QUI!</button>
+    </span>
+    <form action="/url" method="GET">
+        <label for="username"> input di prova</label>
+        <input class="input-disabled" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>
+    </form>
 </body>
+
 </html>
