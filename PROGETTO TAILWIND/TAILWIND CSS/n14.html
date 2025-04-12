@@ -7,6 +7,40 @@
     <script src="https://cdn.tailwindcss.com" ></script>
 </head>
 <body>
-    
+
+    <p>
+        Implementa un modulo di input con campi di testo che cambiano stile quando vengono messi a fuoco (focus:) o attivati (active:).
+    </p>
+    <form action="/url" method="GET">
+        <label for="username"> esempio 1 di input active:</label>
+            <input class="active:bg-pink-300 bg-blue-300 active:text-blue-600 text-pink-600" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>  
+    </form>
+    <form action="/url" method="GET">
+        <label for="username"> esempio 2 di input active:</label>
+            <input class="active:bg-lime-300 bg-amber-300 active:text-amber-600 text-lime-600" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>  
+    </form>
+    <form action="/url" method="GET">
+        <label for="username"> esempio 3 di input active:</label>
+            <input class="active:bg-emerald-300 bg-stone-300 active:text-stone-600 text-emerald-600" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>  
+    </form>
+    <form action="/url" method="GET">
+        <label for="username"> esempio 1 di input focus:</label>
+            <input class="focus:bg-pink-300 bg-blue-300 focus:text-blue-600 text-pink-600" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>  
+    </form>
+    <form action="/url" method="GET">
+        <label for="username"> esempio 2 di input focus:</label>
+            <input class="focus:bg-lime-300 bg-amber-300 focus:text-amber-600 text-lime-600" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+           
+        <button type="submit">Submit</button>  
+    </form>
+    <form action="/url" method="GET">
+        <label for="username"> esempio 3 di input focus:</label>
+            <input   class="focus:bg-emerald-300 bg-stone-300 focus:text-stone-600 text-emerald-600" type="text" id="username" name="username" minlength="3" maxlength="20" required>
+        <button type="submit">Submit</button>  
+    </form>
 </body>
 </html>
