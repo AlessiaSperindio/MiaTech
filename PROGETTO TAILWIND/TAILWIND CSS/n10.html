@@ -5,14 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+        tailwind.config = {
+            darkMode : "class",
+            theme :{
+                extends :{
+                    colors :{
+                        primary: "",
+                        secondary:"",
+
+                    },
+                },
+
+            },
+        }
+     </script>
 </head>
 <body>
+    <div class="bg-white dark:bg-gray-800 dark:text-white rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+        <div>
+          <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 dark:bg-green-900 p-2 shadow-lg">
+            <p class="text-black dark:text-gray-400 dark:text-gray-100 mt-2 text-sm ">
+          questo è un esempio di dark mode.
+        </p>
+          </span>
+        </div>
+        <div>
+            <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark Mode:<span id="darkModeStatus"></span></button>
+            </div>
    <p>
     Configura Tailwind per supportare la 
     modalità scura e crea una pagina HTML
      che cambi automaticamente lo stile quando
       è attivata la modalità scura nel sistema operativo.
 </p>
-    
+<script>
+    const toggleDarkMode = () => {
+    document.body.classList.toggle("dark");
+    document.querySelector("#darkModeStatus").innerHTML = dpocument.body.classList.contains("dark") ? "Active" : "Inactive";};
+    document.querySelector("#darkModeToggle").addEventListener("click",toggleDarkMode);
+    </script>
 </body>
 </html>
