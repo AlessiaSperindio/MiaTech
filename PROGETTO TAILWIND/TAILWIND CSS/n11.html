@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com" ></script>
+    <script>
+        tailwind.config = {
+            darkMode : "class",
+            theme :{
+                extends :{
+                    colors :{
+                        primary: "",
+                        secondary:"",
+
+                    },
+                },
+
+            },
+        }
+     </script>
+</head>
+<body>
+    <div class="flex flex-row dark:bg-gray-900 dark:text-white">
+        <div class="bg-pink-200 p-4 m-2 dark:bg-gray-900 dark:text-white">home </div>
+        <div class="bg-pink-300 p-4 m-2 dark:bg-gray-900 dark:text-white">sign in</div>
+        <div class="bg-pink-400 p-4 m-2 dark:bg-gray-900 dark:text-white">link</div>
+    </div>
+    <div class="flex flex-col p-6 m-4 dark:bg-gray-900 dark:text-white">
+        <div class="bg-slate-200 p-4 m-2 dark:bg-gray-900 dark:text-white">col1 </div>
+        <div class="bg-red-200 p-4 m-2 dark:bg-gray-900 dark:text-white">col2</div>
+        <div class="bg-slate-200 p-4 m-2 dark:bg-gray-900 dark:text-white">col3</div>
+        <div class="bg-slate-200 p-4 m-2 dark:bg-gray-900 dark:text-white">col4</div>
+        <div class="bg-red-200 p-4 m-2 dark:bg-gray-900 dark:text-white">col5</div>
+        <div class="bg-slate-200 p-4 m-2 dark:bg-gray-900 dark:text-white">col6</div>
+    </div>
+    <div class="flex active:bg-green-100 text-emerald-600 dark:bg-gray-900 dark:text-white">
+        <link class="font-light dark:bg-gray-900 dark:text-white ">link1</link>
+        <link class="font-medium  dark:bg-gray-900 dark:text-white">link2</link>
+        <link class="font-semibold dark:bg-gray-900 dark:text-white ">link3</link>
+    </div>
+    <div class="flex flex-col bg-pink-100 dark:bg-gray-900 dark:text-white">
+        <button class="text-pink-200 bg-pink-500 active:bg-yellow-400 dark:bg-gray-900 dark:text-white">questo bottone è rosa,se toccato diventa giallo</button>
+        <button class="text-pink-300 bg-yellow-400 active:bg-pink-500 dark:bg-gray-900 dark:text-white">questo bottone è giallo,se toccato diventa rosa</button>
+    </div>
+    <p>
+        Crea un layout con sfondi e testi che cambiano colore tra modalità chiara e scura utilizzando le classi dark
+    </p>
+    <div>
+        <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark Mode:<span id="darkModeStatus"></span></button>
+        </div>
+
+        <script>
+            const toggleDarkMode = () => {
+            document.body.classList.toggle("dark");
+            document.querySelector("#darkModeStatus").innerHTML = dpocument.body.classList.contains("dark") ? "Active" : "Inactive";};
+            document.querySelector("#darkModeToggle").addEventListener("click",toggleDarkMode);
+            </script>
+</body>
+</html>
