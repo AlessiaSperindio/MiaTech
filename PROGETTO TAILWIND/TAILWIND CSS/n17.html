@@ -5,8 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com" ></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#41463D",
+                        secondary: "#eea29a",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+        .btn {
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+    }
+        .btn-primary{
+            @apply btn text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .btn-secondary{
+            @apply btn text-white bg-secondary hover:opacity-95 active:border-2
+    }
+        .btn-disabled{
+           @apply btn invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+        }
+        .div{
+        border: 3px solid rgb(15, 12, 12);
+        padding:10px ;
+        border-radius:8px;
+        }
+        .div-primary{
+            @apply div text-primary  focus:border-2
+        }
+        .div-secondary{
+            @apply div text-secondary bg-amber-300 focus:border-2
+        }
+    .div-disabled{
+         @apply div invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+    }
+    .card {
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+    }
+        .card-primary{
+            @apply card text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .card-secondary{
+            @apply card text-white bg-secondary hover:opacity-95 active:border-2
+    }
+        .card-disabled{
+           @apply card invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+        }
+    }
+        </style>
 </head>
 <body>
-    
-</body>
-</html>
+    <p>
+        Definisci un set di stili riutilizzabili per card e pulsanti, utilizzando classi personalizzate nel file di configurazione.
+    </p>
+    <body >
+        <span class="span">
+            <div class="div-primary">
+                <button class="btn">
+                  questo è un bottone
+                </button>
+                </div>
+        </span>
+                <nav class="flex flex-col items-center p-6 m-10 border-solid bg-emerald-300">
+                  <div class="div" >questo è un div
+                    <card class="card">card</card>
+                  </div>
+                  <div class="div-secondary" >questo è un div
+                    <card class="card-disabled">disabled</card>
+                  </div>
+                  <div class="div-primary" >questo è un div
+                    <card class="card-primary">primary</card>
+                  </div>
+                  <div class="div-disabled" >questo è un div
+                    <card class="card-secondary">secondary</card>
+                  </div>
+                  <div class="div-primary" >questo è un div-primary
+                    <card class="card-primary">card-primary</card>
+                  </div>
+                  <div class="div-primary" >questo è un div-primary che racchiude 3 card
+                    <card class="card">card1</card>
+                    <card class="card-primary">card2</card>
+                    <card class="card-secondary">card3</card>
+                  </div>
+                  <button class="btn">questo è un bottone</button>
+                  <button class="btn-primary">questo è un bottone</button>
+                  <button class="btn-secondary">questo è un bottone</button>
+                  </nav>
+                    </body>
+                    </html>
