@@ -5,8 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com" ></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#41463D",
+                        secondary: "#eea29a",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+        .btn {
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+    }
+        .btn-primary{
+            @apply btn text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .btn-secondary{
+            @apply btn text-white bg-secondary hover:opacity-95 active:border-2
+    }
+        .div{
+        border: 3px solid rgb(15, 12, 12);
+        padding:10px ;
+        border-radius:8px;
+        }
+        .div-primary{
+            @apply div text-primary  focus:border-2 bg-pink-200
+        }
+        .div-secondary{
+            @apply div text-secondary bg-amber-300 focus:border-2
+        }
+    .card {
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+    }
+        .card-primary{
+            @apply card text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .card-secondary{
+            @apply card text-white bg-secondary hover:opacity-95 active:border-2
+    }
+        .nav{
+            border:4px solid black;
+            font-size: large;
+            font-style: oblique;
+            background-color: yellow;
+        }
+        .p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+        </style>
 </head>
 <body>
-    
+    <p>
+        Configura e dimostra la gerarchia di stili creando diversi elementi che utilizzano vari livelli di stili personalizzati.
+    </p>
+    <nav class="nav">nav
+        <button class="btn-primary">btn</button>
+        <button class="btn-primary">btn</button>
+        <button class="btn-primary">btn</button>
+        <button class="btn-primary">btn</button>
+        <button class="btn-primary">btn</button>
+    </nav>
+    <div class="div">div
+        <h1>h1</h1>
+        <p class="p">paragraph</p>
+        <button class="btn-secondary">btn</button>
+        <h2>h2</h2>
+        <card class="card-primary">card</card>
+    </div>
+    <div class="div-primary">div
+        <p  class="p">paragraph</p>
+        <button class="btn">btn</button>
+        <h2>h2</h2>
+        <card class="card-secondary">card</card>
+    </div>
+    <div class="div-secondary">div
+        <p  class="p">paragraph</p>
+        <button class="btn-secondary">btn</button>
+        <h2>h2</h2>
+        <card class="card-primary">card</card>
+    </div>
 </body>
 </html>
