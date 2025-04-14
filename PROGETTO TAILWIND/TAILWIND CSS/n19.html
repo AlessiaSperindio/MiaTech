@@ -5,8 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com" ></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#41463D",
+                        secondary: "#eea29a",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+        .container {
+        display:flex;
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+    }
+        .container-primary{
+            @apply container text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .container-secondary{
+            @apply container text-white bg-secondary hover:opacity-95 active:border-2
+    }
+        .container-disabled{
+           @apply container invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+        }
+        .row{
+        display: flex;
+        flex-direction: row;
+        border: 3px solid rgb(202, 16, 16);
+        padding:10px ;
+        border-radius:8px;
+        }
+        .row-primary{
+            @apply row text-primary  focus:border-2
+        }
+        .row-secondary{
+            @apply row text-slate-800 bg-amber-300 focus:border-2
+        }
+    .row-disabled{
+         @apply row invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+    }
+    .col{
+        display: flex;
+        flex-direction: col;
+        border: 3px solid rgb(202, 16, 16);
+        padding:10px ;
+        border-radius:8px;
+        }
+        .col-primary{
+            @apply col text-primary  focus:border-2
+        }
+        .col-secondary{
+            @apply col text-red-900 bg-amber-300 focus:border-2
+        }
+    .col-disabled{
+         @apply col invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+    }}
+        </style>
 </head>
-<body>
-    
+<body class="row">
+    <p>
+        Crea un layout di base che utilizza flex per posizionare tre colonne affiancate, dimostrando l'uso di classi come flex, flex-row, flex-col.
+    </p>
+    <div class="container">questo è un div di prova
+        <button class="row-secondary">questo è un btn di prova</button>
+        <button class="row-secondary">questo è un btn di prova</button>
+        <button class="row-secondary">questo è un btn di prova</button>
+    </div>
+    <div class="col-primary">questo è un div di prova
+        <button class="row-primary">questo è un btn di prova</button>
+    </div>
+    <div class="col-secondary">questo è un div di prova
+        <h1>questo è un h1 di prova</h1>
+    </div>
+    <div class="row-primary">questo è un div di prova</div>
+    <div class="row-primary border-10">questo è un div di prova</div>
 </body>
 </html>
