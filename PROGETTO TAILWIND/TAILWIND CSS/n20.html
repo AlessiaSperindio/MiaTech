@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com" ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#41463D",
+                        secondary: "#eea29a",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+        .container {
+        display:flex;
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+        justify-content: center;
+    }
+        .container-primary{
+            @apply container text-white bg-primary hover:opacity-95 active:border-2
+    }
+        .container-secondary{
+            @apply container text-white bg-amber-300 hover:opacity-95 active:border-2
+    }
+        .container-disabled{
+           @apply container invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+        }
+        .justify{
+         display:flex;
+        border: 1px solid black;
+        padding:10px 20px;
+        border-radius:4px;
+        justify-content: center;
+        align-items: center;
+       
+        }
+        .justify-primary{
+            @apply justify text-primary  focus:border-2
+        }
+        .justify-secondary{
+            @apply justify text-secondary bg-amber-300 focus:border-2
+        }
+    .justify-disabled{
+         @apply justify invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+    }
+    .items{
+        width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+}
+        }
+        .items-primary{
+            @apply items text-black bg-blue-300 focus:border-2
+        }
+        .items-secondary{
+            @apply items text-red-500 bg-amber-300 focus:border-2
+        }
+    .items-disabled{
+         @apply items invalid:border-pink-500
+          invalid:text-pink-600 focus:border-sky-500 focus:outline 
+          focus:outline-sky-500 focus:invalid:border-pink-500
+           focus:invalid:outline-pink-500 
+           disabled:border-gray-200 
+           disabled:bg-gray-50 
+           disabled:text-gray-500 
+           disabled:shadow-none
+    }
+        </style>
 </head>
-<body>
-    
+
+<body class="justify">
+    <p class="bg-grey-100">
+        Utilizza le classi di allineamento (justify-center, items-center) per creare un layout centrato sia
+        orizzontalmente che verticalmente.
+    </p>
+    <nav class="justify bg-amber-400">
+        <button class="justify items-primary">HELLO</button>
+        <button class=" justify items-primary">WORLD</button>
+        <button class="justify items-primary">!!!</button>
+    </nav>
+    <footer class="justify">
+        <form>
+            <label>
+                <input class="container-secondary">
+            </label>
+        </form>
+    </footer>
+
+
 </body>
+
 </html>
