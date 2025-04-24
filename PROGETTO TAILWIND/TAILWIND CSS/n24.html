@@ -7,6 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <p>
+        Crea un layout in cui alcuni elementi vengono mostrati o nascosti a seconda della dimensione dello schermo utilizzando classi come hidden, md:block.
+    </p>
+    <span class="@container inline-grid grid-cols-3 gap-40 md:block">
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">01</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">02</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">03</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">04</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">05</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">06</span>
+      </span>
+      <span class="flex flex-col @md:flex-row gap-40 hidden ">
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">01</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">02</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">03</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">04</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">05</span>
+        <span class="bg-cyan-500 border-4 border-indigo-500/75 p-20">06</span>
+      </span>
 </body>
 </html>
