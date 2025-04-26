@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+//exercise "contatore semplice-parte 2"
+import Counter from "./assets/components/Counter";
+
 
 const App = () => {
     const [data, setData] = useState(null);
