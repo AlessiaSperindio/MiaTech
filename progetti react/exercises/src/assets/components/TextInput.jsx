@@ -22,7 +22,7 @@ const TextInput = () =>{
       <>
       <form onChange={handleChange}>
         
-        <input type='text' name='defaultChecked' value ={inputValue.handleChange} />
+        <input type='text' name='defaultChecked' value ={inputValue.handleChange} >scrivi una frase:</input>
         
         <p>Hai scritto: {inputValue}</p>
         </form>
