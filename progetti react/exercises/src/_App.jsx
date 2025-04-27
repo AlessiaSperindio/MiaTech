@@ -1,8 +1,9 @@
 import HelloWorld from "./assets/components/HelloWorld"
 import ClassHelloWorld from "./assets/components/ClassHelloWorld"
 import {useEffect, useState } from 'react';
+//exercise "sincronizza il titolo con il contatore":
+import Counter from "./assets/components/Counter"
 
-//start of exercise" contatore semplice-parte 2"
 const App = () => {
   const [counter,setCounter] = useState(0)
 
@@ -26,12 +27,11 @@ const App = () => {
   //exercise "resetta il contatore":third button
   return(<>
   <button onClick={()=> setCounter(counter+1)}>Counter:{counter}</button>
-  <button onClick={()=> setCounter(counter-1)}>Counter:{counter}</button>
-  <button onClick={()=> setCounter(counter == 0)}>Counter:{counter}</button>
+  
 <HelloWorld/>
 <ClassHelloWorld/>
  </> )
 }
 export default App;
-//end of exercise" contatore semplice-parte 2"
+
 //una volta messo l'undescore al nome e controllato che sia salvato senza undescore nel  main nell'import, abbiamo questo file come backup.

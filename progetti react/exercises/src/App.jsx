@@ -1,6 +1,9 @@
+//exercise "sincronizza il titolo con il contatore":
 import { useEffect, useState } from "react";
 //exercise "contatore semplice-parte 2"
 import Counter from "./assets/components/Counter";
+import TextInput from "./assets/components/TextInput";
+import LoginForm from "./assets/components/LoginForm";
 
 
 const App = () => {
@@ -42,6 +45,10 @@ const App = () => {
     }
     return (
         <>
+        <Counter/>
+        <LoginForm/>
+        <TextInput/>
+        
         <table>
         <thead>
             <tr>
