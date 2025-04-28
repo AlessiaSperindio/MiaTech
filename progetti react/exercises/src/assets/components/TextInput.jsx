@@ -11,18 +11,23 @@ const TextInput = () =>{
 
   
     const handleChange = (event) => {
-        const { name, value} = event.target;
-       setInputValue = ((_inputValue) => ({
-            ..._inputValue,
-            [name]:type == 'text' ? defaultChecked : value,
+        const { name, type, checked, onInput} = event.target;
+       
+        setInputValue ((inputValue) => ({
+            ...inputValue,
+            [name]:type == 'text' ? checked : onInput,
         })
         )
     }
+    const handleInput = (event) => {
+        event.preventDefault();
+        console.log(inputValue);
+        }    
   return (
       <>
-      <form onChange={handleChange}>
-        
-        <input type='text' name='defaultChecked' value ={inputValue.handleChange} >scrivi una frase:</input>
+      <form onChange={handleInput}>
+      
+        <input type='text' name='defaultChecked' checked={inputValue.defaultChecked} onInput={handleChange}>scrivi una frase:</input>
         
         <p>Hai scritto: {inputValue}</p>
         </form>
