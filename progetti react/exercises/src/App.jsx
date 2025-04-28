@@ -1,14 +1,15 @@
 //exercise "sincronizza il titolo con il contatore":
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 //exercise "contatore semplice-parte 2"
-import Counter from "./assets/components/Counter";
-import TextInput from "./assets/components/TextInput";
-import LoginForm from "./assets/components/LoginForm";
-import FirstUseRef from "./assets/components/FirstUseRef";
-
+//import Counter from "./assets/components/Counter";
+//import TextInput from "./assets/components/TextInput";
+//import LoginForm from "./assets/components/LoginForm";
+//import FirstUseRef from "./assets/components/FirstUseRef";
+import Navbar from "./assets/components/Navbar"
 const App = () => {
+
    
-    const [data, setData] = useState(null);
+/*const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
 
@@ -43,9 +44,16 @@ const App = () => {
         return(
             <p>{error}</p>
         )
-    }
+    }*/
     return (
         <>
+         
+        </>
+        )
+    }
+export default App
+/*
+//chiamata API
         <Counter/>
         <LoginForm/>
         <TextInput/>
@@ -86,6 +94,4 @@ const App = () => {
         </table>
         </>
     )
-}
-export default App;
-//chiamata API
+}*/

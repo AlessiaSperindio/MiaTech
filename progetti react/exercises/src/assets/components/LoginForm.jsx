@@ -10,7 +10,7 @@ const LoginForm = () => {
         password: "",
         isChecked: false,
     });
-const handleInput =(event) => {
+const handleInput (event) => {
 const {name, value, checked, type} = event.target;
 
 setForm((_form) => ({
