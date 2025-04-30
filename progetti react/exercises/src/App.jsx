@@ -1,6 +1,7 @@
 //exercise "sincronizza il titolo con il contatore":
+import Table from "./assets/components/Table";
 
-import Card from "./assets/components/Card";
+
 
 const App = () => {
 
@@ -8,7 +9,7 @@ const App = () => {
 
     return (
         <>
-        <Card><p>HELLO WORLD!</p></Card>
+        <Table/>
         </>
     )
 }
