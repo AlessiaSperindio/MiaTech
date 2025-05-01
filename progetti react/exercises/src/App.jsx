@@ -1,5 +1,6 @@
 //exercise "sincronizza il titolo con il contatore":
-import Table from "./assets/components/Table";
+
+import UseFetch from "./assets/components/UseFetch";
 
 
 
@@ -9,7 +10,7 @@ const App = () => {
 
     return (
         <>
-        <Table/>
+        <UseFetch/>
         </>
     )
 }
