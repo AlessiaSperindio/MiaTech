@@ -1,8 +1,4 @@
-//exercise "sincronizza il titolo con il contatore":
-
-import UseFetch from "./assets/components/UseFetch";
-
-
+import Navbar from "./assets/components/Navbar"
 
 const App = () => {
 
@@ -10,7 +6,7 @@ const App = () => {
 
     return (
         <>
-        <UseFetch/>
+        <Navbar/>
         </>
     )
 }
