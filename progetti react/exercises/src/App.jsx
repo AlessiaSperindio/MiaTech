@@ -1,17 +1,13 @@
-import Navbar from "./assets/components/Navbar"
+
+import React from "react";
+import Footer from "./components/Footer";
 
 const App = () => {
-
-   
-
+    
     return (
-        <>
-        <Navbar/>
-        </>
+    <>
+        <Footer/>
+    </>
     )
 }
-       
-export default App
-
-//chiamata API
-        
+export default App;
