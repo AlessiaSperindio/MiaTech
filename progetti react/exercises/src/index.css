@@ -34,7 +34,7 @@
     -cerulean: #4281a4ff;
 --mint: #50b99aff;
 --white-smoke: #f5f5f5ff;
---eerie-black: ;
+--eerie-black: #1f1f1fff;
 --oxford-blue: #0f192eff;
 
 }
@@ -43,4 +43,57 @@
   flex-direction: row; 
   font-family: 'Roboto', sans-serif; 
   text-transform: uppercase; 
+}
+.grid-container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color:#50b99aff ; 
+  width: 100%; 
+  color: #4281a4ff; 
+  padding: 20px; 
+  gap: 8px; 
+  position: relative; 
+  border: solid 2px  #f5f5f5ff ;
+}
+.div-button{
+    display: flex; 
+  flex-direction: row; 
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+  background-color: #0f192eff;
+}
+.span-button{
+    width: 5rem; 
+  display: flex; 
+  flex-direction: row; 
+  position: absolute; 
+  right: 0; 
+  justify-content: flex-end; 
+  border-top: 1px solid #1f1f1fff;
+}
+.obj-div{
+    display: flex; 
+  position: absolute; 
+  margin: auto; 
+  bottom: 0; 
+  border-top: 1px solid #f5f5f5ff;
+  background-color: #0f192eff;  
+}
+.nav-container{
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 1.25rem;
+    background-color:  #0f192eff;
+    font-style:#4281a4ff; 
+}
+.nav-fixed{
+    display: flex; 
+  position: fixed; 
+  width: 100%;  
+  padding: 5rem; 
+  column-count: 3; 
+  column-gap: 2rem; 
+  background-color:  #0f192eff;
+  font-style:#4281a4ff;
 }

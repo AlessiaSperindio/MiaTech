@@ -14,7 +14,19 @@ const Footer = () => {
                 <img src="../../public/images/logosara.png" className="logo" alt="logotop" />
                 <p className="slogan">ten years in one click </p>
             </FooterWrapper>
-            <FooterContainer></FooterContainer>
+            <FooterContainer>
+                <li className="grid-container"> 
+             <p className="div-button">
+             Leave a review!
+             </p>
+             <p>
+             Latest news:
+             </p>
+             <p>
+             They say about us:
+             </p>
+                </li>
+            </FooterContainer>
             <FooterObj></FooterObj>
         </>
     )

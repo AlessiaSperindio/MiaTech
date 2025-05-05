@@ -1,12 +1,12 @@
 
 import React from "react";
-import Footer from "./components/Footer";
+import FooterWrapper from "./components/FooterWrapper";
 
 const App = () => {
     
     return (
     <>
-        <Footer></Footer>
+        <FooterWrapper></FooterWrapper>
     </>
     )
 }
