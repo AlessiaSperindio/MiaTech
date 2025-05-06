@@ -1,5 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react"
+//Crea un hook personalizzato chiamato useFetch che recupera dati da una URL passata come argomento. L'hook dovrebbe restituire i dati recuperati, uno stato di caricamento e uno stato di errore.
 
 const UseFetch = () => {
     const [data, setData] = useState(null);
