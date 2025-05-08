@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 
-//Crea un hook personalizzato chiamato useFetch che recupera dati da una URL passata
+//Crea un hook personalizzato chiamato useFilteredTodos che recupera dati da una URL passata
 //  come argomento.
 //  L'hook dovrebbe restituire i dati recuperati, uno stato di caricamento e uno stato di errore.
 
@@ -12,7 +12,7 @@ const DEFAULT_OPTIONS = {
     data: {}
 }
 
-export const useFetch = (url, options = DEFAULT_OPTIONS) => {
+export const useFilteredTodos = (url, options = DEFAULT_OPTIONS) => {
     options = { ...DEFAULT_OPTIONS, ...options };
 
     const [data, setData] = useState(null);
@@ -49,6 +49,6 @@ export const useFetch = (url, options = DEFAULT_OPTIONS) => {
         data,
         error,
         loading,
-        reload: fetchData
+        
     }
 }

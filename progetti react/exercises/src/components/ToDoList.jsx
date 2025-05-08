@@ -1,6 +1,11 @@
 import React from "react";
-import { useEffect, useState } from "react";
 
+//Modifica TodoList per includere un campo di input per la ricerca.
+//  Utilizza useFilteredTodos per visualizzare solo i to-do che corrispondono al termine di ricerca.
+
+import {useState, useEffect} from "react";
+
+import { useFilteredTodos } from "../hooks/useFilteredTodos";
 
 
 const API_URL = "https://jsonplaceholder.typicode.com/todos";
@@ -8,7 +13,9 @@ const API_URL = "https://jsonplaceholder.typicode.com/todos";
 
 
 const ToDoList = () => {
+
     const [posts, setPosts] = useState(null);
+   
 
     const fetchData = async () => {
         try {
@@ -27,29 +34,48 @@ const ToDoList = () => {
 
 
     useEffect(() => {
-        fetchData();
+       fetchData();
     }, []);
+    
+
+    
+
+    //const handleFocusInput =()=>{
+      //  inputRef.current.focus();
+    //}
+    const filter= useFilteredTodos(handleFilterInput);
+    const handleFilterInput=()=>{
+        filter.current.focus();
+    }
+    
+    /*
+    useEffect(()=>{
+        inputRef.current.focus();
+    }, []);*/
 
     return (
         <>
+
+        <button onClick={filter}>SEARCH ON LIST:{posts}</button>
+        <input value={posts} ref={filter}/>
             <table>
                 <thead>
                     <tr>
-                        <th>Id</th>
                         <th>UserId</th>
+                        <th>Id</th>
                         <th>Title</th>
-                        <th>Body</th>
+                        <th>Completed</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         posts && posts.map((post) => (
-                            <tr key={post.Id}>
+                            <tr key={post.UserId}>
 
-                                <td>{post.Id}</td>
                                 <td>{post.UserId}</td>
+                                <td>{post.Id}</td>
                                 <td>{post.Title}</td>
-                                <td>{post.Body}</td>
+                                <td>{post.completed}</td>
                             </tr>
                         ))
                     }

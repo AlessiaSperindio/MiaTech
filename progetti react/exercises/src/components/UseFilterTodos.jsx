@@ -7,6 +7,7 @@ const url = "https://jsonplaceholder.typicode.com/comments";
 
 const UseFilterTodos = () => {
     const { data } = useFilteredTodos(url, { method: "GET" });
+    
     return (
         <>
             <table>
