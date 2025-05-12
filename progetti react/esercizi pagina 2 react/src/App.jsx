@@ -1,11 +1,11 @@
-import PublicLayout from "./assets/components/layouts/PublicLayouts";
+import ShowCounter from "./assets/components/ShowCounter";
 
 
 
 const App = () => {
     return (
         <>
-            <PublicLayout></PublicLayout>
+            <ShowCounter></ShowCounter>
         </>
     )
 }
