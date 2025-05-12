@@ -1,7 +1,7 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { Outlet } from "react-router-dom";
-const PublicLayout =() => 
+const Layout =() => 
     {
         return(
             <>
@@ -15,4 +15,4 @@ const PublicLayout =() =>
     )
 
     }
-    export default PublicLayout;
+    export default Layout;
