@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-const LangContext= createContext(null);
+export const LangContext= createContext(null);
 
 
 

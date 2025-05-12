@@ -3,7 +3,15 @@ import { useState, useEffect } from 'react';
 //start of exercise" contatore semplice-parte 2"
 const Counter = () => {
     const [counter,setCounter] = useState(0)
-
+const handleValueButton = () => {
+  setValue((_value) => {
+    return _value +1;
+  }}
+  const handleclickButton = () => {
+  setCounter((_counter) => {
+    return _counter +1;
+  }}
+}
   //funzione eseguita al mounth del componente(primo rendering)
   useEffect(()=>{
     console.log("mounth del componente")
