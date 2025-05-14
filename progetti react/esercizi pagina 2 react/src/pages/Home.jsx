@@ -1,13 +1,12 @@
 // "/"-> http//localhost:PORT
 
-import ToDoList from "../assets/components/ToDoList";
 
 
-const Home = () => {
+const Home = ({ children }) => {
     return(
     <>
-    <h1>Home</h1>
-    <ToDoList></ToDoList>
+    <h1>{children}</h1>
+    
     </>
     )
 }
