@@ -6,26 +6,27 @@ import { useState, useEffect } from "react";
 //  L'hook dovrebbe restituire i dati recuperati, uno stato di caricamento e uno stato di errore.
 
 
-/*const DEFAULT_OPTIONS = {
+const DEFAULT_OPTIONS = {
     method: "GET",
     headers: {},
     data: {}
 }
-*/
-export const useFilteredTodos = ( url,options={}) => {
+
+
+export const useFilteredTodos = ( url,options={DEFAULT_OPTIONS}) => {
     
 
     const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [filter, setFilter] = useState(true);
     const [error, setError] = useState(false);
 
 
-    const fetchData = async () => {
+    const filterData = async () => {
         if (error) setError(false);
-        if (!loading) setLoading(true);
+        if (!filter) setFilter(true);
 
         try {
-            const response = await fetch(url, options);
+            const response = await filter(url, options);
 
             if (!response.ok) {
                 throw new Error("Error during data fetch, try again later ");
@@ -36,19 +37,19 @@ export const useFilteredTodos = ( url,options={}) => {
         } catch (error) {
             setError(error.message);
         } finally {
-            setLoading(false);
+            setFilter(false);
         }
     }
     useEffect(() => {
-    fetchData();
-  }, [url, JSON.stringify(options)]);
+    filterData()
+  }, []);
 
 
 
     return {
         data,
         error,
-        loading,
-        
+        filter,
+        reload : filterData
     }
 }

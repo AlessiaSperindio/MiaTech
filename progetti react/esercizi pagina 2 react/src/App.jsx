@@ -1,13 +1,13 @@
-import ShowCounter from "./assets/components/ShowCounter";
-import useFetch from "./assets/components/hooks/useFetch"
+import ToDoList from "./assets/components/ToDoList"
 
 
 const App = () => {
-    return (
+    return(
         <>
-        <useFetch/>
-            <ShowCounter></ShowCounter>
+
+        <ToDoList></ToDoList>
         </>
     )
+       
 }
-export default App;
+export default App
