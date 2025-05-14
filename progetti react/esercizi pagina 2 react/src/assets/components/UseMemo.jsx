@@ -1,25 +1,28 @@
-import  { useState, useCallback } from 'react';
+import { useState } from "react";
 
-function TodoList() {
+const UseMemo = () => {
+    
   const [searchTerm, setSearchTerm] = useState('');
-  const [todos, setTodos] = useState([
-    // esempio di dati
+  const todos= useState([
     { id: 1, text: 'Fare la spesa' },
     { id: 2, text: 'Studiare React' },
     { id: 3, text: 'Andare in palestra' },
   ]);
 
-  
+  // Gestione del cambio dell'input di ricerca con useCallback
   const handleSearchChange = useCallback((e) => {
     setSearchTerm(e.target.value);
-  }, []); 
+  }, []);
 
-  const filteredTodos = todos.filter(todo =>
-    todo.text.setTodos().includes(searchTerm.setTodos())
-  );
+  // Memoizzazione della lista filtrata con useMemo
+  const filteredTodos = UseMemo(() => {
+    return todos.filter(todo =>
+      todo.text.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [todos, searchTerm]); // Ricostruisce solo se cambia uno di questi
 
   return (
-    <div>
+    <>
       <input
         type="text"
         placeholder="Cerca..."
@@ -31,8 +34,9 @@ function TodoList() {
           <li key={todo.id}>{todo.text}</li>
         ))}
       </ul>
-    </div>
-  );
-}
+   
 
-export default TodoList;
+    </>
+    )
+}
+export default UseMemo;
