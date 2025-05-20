@@ -14,5 +14,8 @@
     "sass"
   ],
   "author": "alessia sperindio",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "file:"
+  }
 }
