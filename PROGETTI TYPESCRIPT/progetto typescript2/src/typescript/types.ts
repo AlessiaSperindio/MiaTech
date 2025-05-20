@@ -46,5 +46,11 @@ function addTodo(title: string): Todo {
   todos.push(newTodo);
   return newTodo;
 }
+//In types.ts, definisci un'interfaccia User con le seguenti proprietà: id (number), name (string), email (string, opzionale).
+interface User {
+    id: number,
+    name:string,
+    email?:string,
+    }
 
             
