@@ -17,7 +17,7 @@ interface Todo {
 
 //const array:(string|number|null)[];diventa poi :
 
-const todos: Todo[] = [];
+
 /*const printArray (array,{
     name:"ale",
     age: 32,
@@ -29,4 +29,22 @@ const todos: Todo[] = [];
         Verify: false
     }
 });*/
-console.log(todos);
+
+// Crea una funzione addTodo che prende un titolo come parametro e restituisce un nuovo oggetto Todo con un id unico e completed impostato su false.
+//Aggiungi il nuovo Todo all'array todos.
+const todos: Todo[] = [];
+
+// Funzione per generare un ID unico (ad esempio usando la data e un contatore)
+let nextId = 1;
+
+function addTodo(title: string): Todo {
+  const newTodo: Todo = {
+    id: nextId++, 
+    title: title,
+    completed: false
+  };
+  todos.push(newTodo);
+  return newTodo;
+}
+
+            
