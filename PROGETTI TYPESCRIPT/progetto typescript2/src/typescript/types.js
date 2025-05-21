@@ -30,6 +30,3 @@ function addTodo(title) {
     todos.push(newTodo);
     return newTodo;
 }
-
-
-            
