@@ -1,12 +1,12 @@
 type Tipo = (string|number|null)[];
 
-interface Todo {
+/*interface Todo {
     name: string,
     age: number,
     isAuth:boolean,
     birth?: Date,
     colors?:Todo,
-}
+}*/
 
 //se inserisco un interfaccia:
 /*interface UserAutInfo{
@@ -32,13 +32,14 @@ interface Todo {
 
 // Crea una funzione addTodo che prende un titolo come parametro e restituisce un nuovo oggetto Todo con un id unico e completed impostato su false.
 //Aggiungi il nuovo Todo all'array todos.
-const todos: Todo[] = [];
+const todos: string[] = ["","",""];
 
 // Funzione per generare un ID unico (ad esempio usando la data e un contatore)
 let nextId = 1;
 
 function addTodo(title: string): Todo {
-  const newTodo: Todo = {
+  const newTodo: Todo: {
+    id: number,title: string,completed: boolean} = {
     id: nextId++, 
     title: title,
     completed: false
@@ -53,4 +54,23 @@ interface User {
     email?:string,
     }
 
-            
+//  Aggiorna l'interfaccia Todo per 
+// includere una proprietà opzionale
+//  userId (number).
+//Crea una funzione assignTodoToUser
+//  che prende un todoId e un userId 
+// e assegna l'utente al todo.
+const userId: number = 5;
+ 
+
+const assignTodoToUser = (userId: number, obj: {
+    id: number,title: string,completed: boolean}): void => {
+    console.log(userId,obj );
+
+}
+assignTodoToUser(userId, {
+    id: 3,
+    title:"userTodo",
+    completed: false
+});
+console.log(assignTodoToUser);
