@@ -123,3 +123,12 @@ const assertError = (value:never):never =>{
             const parseInput = (input :unknown) : unknown =>{
                 console.log(`${input}`);
             }
+//Aggiungi una nuova proprietà metadata all'interfaccia Todo con il tipo any.
+//Aggiorna la funzione addTodo per accettare un parametro opzionale metadata.
+       const newmeta : any = "newData";
+       newmeta.toUpperCase();
+      const addTodo = (newmeta?: any) :any =>{
+        console.log(`${newmeta}`)
+      }
+
+

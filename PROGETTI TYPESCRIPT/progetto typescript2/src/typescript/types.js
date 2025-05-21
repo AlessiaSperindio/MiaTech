@@ -75,3 +75,10 @@ input.toUpperCase();
 var parseInput = function (input) {
     console.log("".concat(input));
 };
+//Aggiungi una nuova proprietà metadata all'interfaccia Todo con il tipo any.
+//Aggiorna la funzione addTodo per accettare un parametro opzionale metadata.
+var newmeta = "newData";
+newmeta.toUpperCase();
+var addTodo = function (newmeta) {
+    console.log("".concat(newmeta));
+};
