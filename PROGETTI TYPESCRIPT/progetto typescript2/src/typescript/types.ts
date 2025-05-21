@@ -132,3 +132,18 @@ const assertError = (value:never):never =>{
       }
 
 
+//   Crea un'interfaccia TodoWithMetadata che estende Todo aggiungendo la proprietà metadata.
+            type TupleArray = [string,number, boolean]
+type ArrayCustom = (string|number| boolean)[]
+interface Todo {
+    id: string
+    name:string
+}
+interface TodoWithMetadata  {
+    id:"1",
+    name:"Ale",
+    newmeta : "newData"
+}
+
+
+type TupleArray = Todo & TodoWithMetadata
