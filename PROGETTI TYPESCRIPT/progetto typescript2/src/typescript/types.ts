@@ -111,3 +111,15 @@ thissport.toUpperCase();
 const assertError = (value:never):never =>{
     throw new Error (`not valid value : ${value}` );            
 }
+//  Crea una funzione parseInput 
+// che prende un input di tipo unknown.
+//  Se l'input è una stringa, 
+// restituiscila com'è. 
+// Se l'input è un numero, 
+// restituisci la rappresentazione stringa del numero.
+//  Altrimenti, lancia un errore usando la funzione error dall'Esercizio 4.1.
+            const input : unknown = "accepted user";
+            input.toUpperCase();
+            const parseInput = (input :unknown) : unknown =>{
+                console.log(`${input}`);
+            }
