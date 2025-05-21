@@ -44,17 +44,22 @@ assignTodoToUser(userId, {
     completed: false
 });
 console.log(assignTodoToUser);
-// Esempio di array di todos
 var todos = [
     { id: 1, userId: 1, title: "Fare la spesa", completed: false },
     { id: 2, userId: 2, title: "Pulire la casa", completed: true },
     { id: 3, userId: 1, title: "Studiare TypeScript", completed: false },
-    // altri todo...
 ];
-// La funzione getUserTodos
 function getUserTodos(userId) {
     return todos.filter(function (todo) { return todo.userId === userId; });
 }
-// Esempio di utilizzo
 var user1Todos = getUserTodos(1);
 console.log(user1Todos);
+// Crea una funzione error che prende un messaggio come parametro e lancia un errore usando il tipo never.
+var thisSport = "judo";
+thissport.toUpperCase();
+var throwError = function (message) {
+    throw new Error(message);
+};
+var assertError = function (value) {
+    throw new Error("not valid value : ".concat(value));
+};

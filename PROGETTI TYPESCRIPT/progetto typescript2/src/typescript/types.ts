@@ -80,7 +80,7 @@ console.log(assignTodoToUser);
 interface Todo {
   id: number;
   userId: number;
-  title: string;
+  title: string; 
   completed: boolean;
 }
 
@@ -100,3 +100,14 @@ function getUserTodos(userId: number): Todo[] {
 
 const user1Todos = getUserTodos(1);
 console.log(user1Todos);
+
+// Crea una funzione error che prende un messaggio come parametro e lancia un errore usando il tipo never.
+const thisSport : never = "judo";
+thissport.toUpperCase();
+
+    const throwError = (message?:string):never => {
+        throw new Error (message);
+    }
+const assertError = (value:never):never =>{
+    throw new Error (`not valid value : ${value}` );            
+}
