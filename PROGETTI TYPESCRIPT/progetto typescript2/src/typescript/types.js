@@ -28,15 +28,6 @@
 var todos = ["", "", ""];
 // Funzione per generare un ID unico (ad esempio usando la data e un contatore)
 var nextId = 1;
-function addTodo(title) {
-    var newTodo, _a = {
-        id: nextId++,
-        title: title,
-        completed: false
-    }, number = _a.id, string = _a.title, boolean = _a.completed;
-    todos.push(newTodo);
-    return newTodo;
-}
 //  Aggiorna l'interfaccia Todo per 
 // includere una proprietà opzionale
 //  userId (number).
@@ -53,3 +44,17 @@ assignTodoToUser(userId, {
     completed: false
 });
 console.log(assignTodoToUser);
+// Esempio di array di todos
+var todos = [
+    { id: 1, userId: 1, title: "Fare la spesa", completed: false },
+    { id: 2, userId: 2, title: "Pulire la casa", completed: true },
+    { id: 3, userId: 1, title: "Studiare TypeScript", completed: false },
+    // altri todo...
+];
+// La funzione getUserTodos
+function getUserTodos(userId) {
+    return todos.filter(function (todo) { return todo.userId === userId; });
+}
+// Esempio di utilizzo
+var user1Todos = getUserTodos(1);
+console.log(user1Todos);

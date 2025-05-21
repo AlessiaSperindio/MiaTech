@@ -37,7 +37,7 @@ const todos: string[] = ["","",""];
 // Funzione per generare un ID unico (ad esempio usando la data e un contatore)
 let nextId = 1;
 
-function addTodo(title: string): Todo {
+/*function addTodo(title: string): Todo {
   const newTodo: Todo: {
     id: number,title: string,completed: boolean} = {
     id: nextId++, 
@@ -46,7 +46,7 @@ function addTodo(title: string): Todo {
   };
   todos.push(newTodo);
   return newTodo;
-}
+}*/
 //In types.ts, definisci un'interfaccia User con le seguenti proprietà: id (number), name (string), email (string, opzionale).
 interface User {
     id: number,
@@ -74,3 +74,29 @@ assignTodoToUser(userId, {
     completed: false
 });
 console.log(assignTodoToUser);
+//   Crea una funzione getUserTodos che 
+// prende un userId e restituisce tutti 
+// i todo associati a quell'utente.
+interface Todo {
+  id: number;
+  userId: number;
+  title: string;
+  completed: boolean;
+}
+
+
+const todos: Todo[] = [
+  { id: 1, userId: 1, title: "Fare la spesa", completed: false },
+  { id: 2, userId: 2, title: "Pulire la casa", completed: true },
+  { id: 3, userId: 1, title: "Studiare TypeScript", completed: false },
+  
+];
+
+
+function getUserTodos(userId: number): Todo[] {
+  return todos.filter(todo => todo.userId === userId);
+}
+
+
+const user1Todos = getUserTodos(1);
+console.log(user1Todos);
