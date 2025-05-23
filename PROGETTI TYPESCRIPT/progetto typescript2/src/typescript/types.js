@@ -82,3 +82,10 @@ newmeta.toUpperCase();
 var addTodo = function (newmeta) {
     console.log("".concat(newmeta));
 };
+//Aggiorna la funzione addTodo per accettare un parametro opzionale metadata di tipo string | object.
+var addTodo = {
+    object: {
+        color: ""
+    }
+};
+var addTodoSimple = "white";

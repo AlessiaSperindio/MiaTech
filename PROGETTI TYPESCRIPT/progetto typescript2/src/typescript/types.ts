@@ -147,3 +147,14 @@ interface TodoWithMetadata  {
 
 
 type TupleArray = Todo & TodoWithMetadata
+//Aggiorna la funzione addTodo per accettare un parametro opzionale metadata di tipo string | object.
+
+
+           
+       const addTodo: Partial<{ object: { color: string } }> = {
+  object: {
+    color: ""
+  }
+};
+
+const addTodoSimple: Partial<string> = "white";
