@@ -89,3 +89,9 @@ var addTodo = {
     }
 };
 var addTodoSimple = "white";
+// Usa il tipo utility Partial per creare una funzione updateTodo che può aggiornare parzialmente le proprietà di un Todo.
+var updateTodo = {
+    object: {
+        color: ""
+    }
+};

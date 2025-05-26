@@ -158,3 +158,13 @@ type TupleArray = Todo & TodoWithMetadata
 };
 
 const addTodoSimple: Partial<string> = "white";
+
+// Usa il tipo utility Partial per creare una funzione updateTodo che può aggiornare parzialmente le proprietà di un Todo.
+ const updateTodo: Partial<{ object: { color: string } }> = {
+  object: {
+    color: ""
+  }
+};
+
+
+
