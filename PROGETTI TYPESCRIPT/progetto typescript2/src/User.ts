@@ -43,4 +43,3 @@ export class User {
     console.log(`Todo "${todo.title}" aggiunto all'utente ${this.name}.`);
   }
 }
-            
