@@ -58,3 +58,5 @@ const updateTodoStatus;
 };
 updateTodoStatus(2, 'Completed');
 console.log(todos);
+//In src, crea un nuovo file User.ts.
+//Definisci una classe User con le proprietà id, name, email (opzionale), e un costruttore per inizializzare queste proprietà.
