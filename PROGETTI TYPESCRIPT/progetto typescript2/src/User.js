@@ -16,3 +16,10 @@ class User {
     }
 }
 exports.User = User;
+const utils_1 = require("./utils");
+const todos = [
+    { id: 1, title: 'Fare la spesa', completed: false },
+    { id: 2, title: 'Studiare', completed: true },
+];
+const completedTodos = (0, utils_1.filterTodos)(todos, todo => todo.completed);
+console.log(completedTodos);

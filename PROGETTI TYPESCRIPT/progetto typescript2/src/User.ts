@@ -43,3 +43,13 @@ export class User {
     console.log(`Todo "${todo.title}" aggiunto all'utente ${this.name}.`);
   }
 }
+import { filterTodos } from './utils';
+
+const todos: Todo[] = [
+  { id: 1, title: 'Fare la spesa', completed: false },
+  { id: 2, title: 'Studiare', completed: true },
+  
+];
+
+const completedTodos = filterTodos(todos, todo => todo.completed);
+console.log(completedTodos);

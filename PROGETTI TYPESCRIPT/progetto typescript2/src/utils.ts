@@ -8,10 +8,26 @@ interface Todo {
   completed: boolean;
 }
 
-export function filterTodos<T>(
+export const  filterTodos<T>(
   todos: T[],
   filterFn: (todo: T) => boolean
 ): T[] {
   return todos.filter(filterFn);
 }
-            
+// Crea un tipo mappato PartialTodo che rende tutte le proprietà dell'interfaccia Todo opzionali.
+//Crea una funzione updatePartialTodo che accetta un todoId e un oggetto di tipo PartialTodo e aggiorna le proprietà specificate del todo.
+  type PartialTodo = Partial<Todo>;
+
+
+const  PartialTodo(
+  todos: Todo[], 
+  todoId: number, 
+  updates: PartialTodo 
+): Todo[] {
+  return todos.map(todo => {
+    if (todo.id === todoId) {
+      return { ...todo, ...updates };
+    }
+    return todo;
+  });
+}          
