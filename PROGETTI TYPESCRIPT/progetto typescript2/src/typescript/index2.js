@@ -1,15 +1,15 @@
 "use strict";
 //lezione 2 :dati primitivi, oggetti, array
-var myName = "Alessia";
-var myAge = 32;
-var isAuth = true;
-var user = {
+const myName = "Alessia";
+const myAge = 32;
+const isAuth = true;
+const user = {
     myName: "Alessia",
     myAge: 32,
     isAuth: true
 };
-var colors = ["blue", "red", "yellow"];
-var myFunction = function (array, obj) {
+const colors = ["blue", "red", "yellow"];
+const myFunction = (array, obj) => {
     console.log(array, obj);
 };
 myFunction(colors, user);
