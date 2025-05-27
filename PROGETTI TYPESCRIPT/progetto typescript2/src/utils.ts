@@ -31,3 +31,6 @@ const  PartialTodo(
     return todo;
   });
 }          
+//Crea un tipo TodoRecord che mappa number (id del todo) a Todo.
+//Crea una funzione convertArrayToRecord che accetta un array di Todo e restituisce un oggetto di tipo TodoRecord.
+            
