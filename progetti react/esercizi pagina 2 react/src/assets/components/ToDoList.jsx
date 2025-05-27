@@ -1,9 +1,10 @@
 import  { useState, useCallback } from 'react';
-
-function TodoList() {
+import { useFilteredTodos } from '../../hooks/useFilteredTodos';
+const TodoList = () => {
+  const filteredTodos = useFilteredTodos(todos, searchTerm);
   const [searchTerm, setSearchTerm] = useState('');
   const [todos, setTodos] = useState([
-    // esempio di dati
+    
     { id: 1, text: 'Fare la spesa' },
     { id: 2, text: 'Studiare React' },
     { id: 3, text: 'Andare in palestra' },
@@ -14,9 +15,7 @@ function TodoList() {
     setSearchTerm(e.target.value);
   }, []); 
 
-  const filteredTodos = todos.filter(todo =>
-    todo.text.setTodos().includes(searchTerm.setTodos())
-  );
+  
 
   return (
     <div>
