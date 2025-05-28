@@ -4,14 +4,14 @@ import { useSearchParams } from 'react-router-dom';
 
 import { Link } from 'react-router-dom';
 
-// Esempio di dati dei To-Do
+
 const todos = [
   { id: '1', title: 'Fare la spesa', description: 'Comprare frutta e verdura' },
   { id: '2', title: 'Studiare React', description: 'Imparare useParams e useNavigate' },
   { id: '3', title: 'Pulire casa', description: 'Spazzare e passare l’aspirapolvere' },
 ];
 
-const TodoList = () => {
+const TodoList5 = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const searchTerm = searchParams.get('search') || '';
@@ -50,4 +50,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default TodoList5;
