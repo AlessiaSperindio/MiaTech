@@ -1,4 +1,4 @@
-
+//Modifica TodoList per includere collegamenti ai dettagli di ogni to-do.
 import { Link } from 'react-router-dom';
 
 
