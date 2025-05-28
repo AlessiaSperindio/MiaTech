@@ -3,11 +3,11 @@
        
 import { useParams } from 'react-router-dom';
 
-// Esempio di dati dei To-Do
+
 const todos = [
   { id: '1', title: 'Fare la spesa', description: 'Comprare frutta e verdura' },
   { id: '2', title: 'Studiare React', description: 'Imparare useParams e useNavigate' },
-  // altri to-do...
+  
 ];
 
 const TodoDetails = () => {
