@@ -1,24 +1,15 @@
-//Modifica TodoList per includere un campo di input per la ricerca. Utilizza useFilteredTodos per visualizzare solo i to-do che corrispondono al termine di ricerca.
-import { useState } from "react";
-import { useFilteredTodos } from "./hooks/useFilteredTodos";
+//Crea un contesto per lo stato dei to-do e un provider che fornisca i to-do e la funzione di aggiornamento. Utilizza useContext per accedere ai to-do nel componente TodoList.
 
-const TodoList = ({ todos }) => {
 
-    const [searchTerm, setSearchTerm] = useState('');
-    const filteredTodos = useFilteredTodos(todos, searchTerm);
-    const handleSearchChange = (e) => { setSearchTerm(e.target.value); };
 
-    return (
-        <>
-            <ul>
-                {filteredTodos.map((todo) => handleSearchChange(
-                    <li key={todo.id}>{todo.text}</li>
-                ))}
-            </ul>
-        </>
-    )
 
+
+const App =() => {
+  return (
+    <TodoProvider>
+      <TodoList />
+    </TodoProvider>
+  );
 }
-export default TodoList
 
-
+export default App;

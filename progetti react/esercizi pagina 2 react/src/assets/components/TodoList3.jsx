@@ -1,3 +1,5 @@
+//Modifica TodoList per utilizzare useMemo nella memorizzazione della lista filtrata dei to-do, così da evitare ricalcoli non necessari.
+
 import  { useState, useCallback, useMemo } from 'react';
 import  useFilteredTodos  from '../../hooks/useFilteredTodos'; 
 
