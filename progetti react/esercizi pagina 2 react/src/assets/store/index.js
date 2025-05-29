@@ -1,8 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit";
-import textReducer from "./slices/textslices";
 
-export default configureStore({
-    reducer:{
-        data : textReducer
-    }
-});
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import App from './App';
+import store from './store';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);

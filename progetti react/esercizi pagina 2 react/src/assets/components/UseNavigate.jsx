@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Home from '../../pages/Home';
 import About from '../../pages/About';
 
-const UseNavigate() {
+const UseNavigate = () =>{
   return (
     <Router>
       <nav>
